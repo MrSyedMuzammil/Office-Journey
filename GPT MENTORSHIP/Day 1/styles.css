@@ -1,0 +1,92 @@
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: Arial, sans-serif; /* You can change it to any font family */
+    line-height: 1.6;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background-color: #222;
+    padding: 1rem 2rem;
+  }
+  
+  .logo {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style: none;
+    display:flex;
+  }
+  
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  nav ul li a:hover {
+    color: #ffa500; /* Hover color */
+  }
+  
+  /* Hero Section */
+  #hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #e9e9e9; /* or you can use a background image later */
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  #hero p {
+    font-size: 1.1rem;
+  }
+  
+  /* Features Section */
+  #features {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 15px;
+  }
+  
+  #features h2 {
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  #features ul {
+    list-style:square;
+    padding-left: 1.5rem;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    background-color: #222;
+    color: #fff;
+    padding: 1rem;
+  }
+  

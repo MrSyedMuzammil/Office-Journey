@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: relative;
+  width: 100vw;
+}
+
+#logo {
+  font-size: 50px;
+  font-family: "Oleo Script", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 8px rgba(255, 0, 0, 0.586);
+}
+
+header a {
+  color: yellow;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+  color: red;
+}
+
+nav a {
+  color: #474646;
+  background-color: yellow;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 8px rgb(88, 88, 56);
+}
+nav a:hover {
+  color: #474646;
+  background-color: rgb(255, 233, 88);
+}

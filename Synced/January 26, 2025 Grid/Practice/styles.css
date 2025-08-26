@@ -1,0 +1,42 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 2fr auto;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+aside {
+  background-color: rgb(65, 54, 54);
+  padding: 20px;
+  border-radius: 8px;
+}
+main {
+  background-color: rgb(160, 160, 160);
+  padding: 20px;
+}
+
+.subscribe {
+  background-color: rgb(150, 150, 166);
+  align-items: center;
+}
+.subscribe button {
+  padding: 20px;
+  background-color: red;
+  border-radius: 50px;
+  margin: 20px;
+}
+
+div.buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 10px;
+  display: block;
+}
+.buttons a {
+  text-decoration: none;
+  color: azure;
+}
+.menu {
+  font-weight: bold;
+  font-size: 24px;
+}

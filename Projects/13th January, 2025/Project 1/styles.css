@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    background-color: #333;
+  }
+
+  .logo-image img {
+    height: 80px;
+    border: 2px solid rgb(108, 127, 223);
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+}
+
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s;
+  }
+  .navbar li a:hover {
+    background-color: #444;
+  }
+
+  .nav-dropdown {
+    position: relative;
+  }
+
+  .dropdown-btn {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s;
+  }
+
+  .dropdown-btn:hover {
+    background-color: #444;
+  }
+
+  .dropdown-content {
+    display: none;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    list-style-type: none;
+    min-width: 150px;
+  }
+  
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  .dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #eee;
+  }
+
+  .buy-btn button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buy-btn button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+
+/* .navbar, .nav-dropdown, .dropdown-content, #buy-btn {
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    gap: 10px;
+} */
+

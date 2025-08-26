@@ -1,0 +1,25 @@
+body {
+	background-color: #233445;
+}
+
+.container {
+	margin: 50px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 200px 200px 200px;
+	gap: 40px;
+}
+
+#idOne,
+.classOne,
+.headingClass,
+.classHavingId,
+#idInsideClass {
+	background-color: #fff;
+	padding: 20px;
+	align-content: center;
+	text-align: center;
+	border-radius: 10px;
+	box-shadow: 0 0 15px greenyellow;
+	text-shadow: 0 0 4px greenyellow;
+}

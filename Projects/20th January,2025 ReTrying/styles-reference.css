@@ -1,0 +1,407 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000;
+	/* background-color: #eff3f9; */
+}
+
+.main-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: #eff3f9;
+	padding: 2.1rem 1.3rem;
+	border: 1px solid black;
+}
+
+.logo-area {
+	display: flex;
+	align-items: center;
+}
+
+.logo-image {
+	width: 3.6rem;
+	height: 3.6rem;
+}
+
+.site-title {
+	font-size: 1.6rem;
+	padding-left: 0.5rem;
+}
+
+.main-nav ul {
+	display: flex;
+	align-items: center;
+	line-height: 3.3rem;
+	list-style: none;
+	font-size: 1rem;
+	gap: 3rem;
+}
+
+.main-nav a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	font-weight: bold;
+	line-height: 3.3rem;
+	color: #5c5c5c;
+}
+
+.nav-buttons ul {
+	gap: 1rem;
+	list-style: none;
+	line-height: 3.3rem;
+	display: flex;
+	justify-content: end;
+}
+
+.login-btn,
+.tryfree-btn,
+.home-btn {
+	/* padding: 2rem 1rem; */
+	margin-right: 0;
+	background-color: cyan;
+	border: 2px solid grey;
+	border-radius: 0.5rem;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+.home-btn {
+	background-color: #6b7280;
+	color: #fff;
+	padding: 0.5rem 1.5rem;
+}
+
+.login-btn {
+	background-color: #fff;
+	border: 2px solid #ddd;
+	color: #6b7280;
+	padding: 0.7rem 0.5rem;
+}
+
+.tryfree-btn {
+	border: none;
+	background-color: #007acd;
+	color: #fff;
+	padding: 0.8rem 1.3rem;
+}
+
+.hero {
+	text-align: center;
+	background-color: #eff3f9;
+	height: 80vh;
+	border-radius: 0 0 10rem 15rem;
+	/* padding: 2rem; */
+}
+
+.hero h1 {
+	padding-top: 2rem;
+	font-size: 1rem;
+	color: #006dbf;
+}
+
+.hero h2 {
+	padding: 2rem;
+	font-size: 4.5rem;
+	letter-spacing: -0.2rem;
+	line-height: 5rem;
+}
+.hero p {
+	font-size: 1.3rem;
+	padding: 0 30rem;
+}
+
+.hero button {
+	margin-top: 1rem;
+	padding: 1rem 5rem;
+	background-color: #1884d6;
+	border-radius: 1rem;
+	border: none;
+	font-size: 2rem;
+	color: #fff;
+}
+
+.stars {
+	font-size: 2rem;
+	color: #facd15;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.centered {
+	text-align: center;
+}
+
+.semibold {
+	font-weight: 600;
+}
+
+.italicized {
+	font-style: italic;
+}
+
+.font-grey {
+	color: #bfc2c6;
+}
+#font-grey {
+	color: #4b5563;
+}
+/* 
+.video-container {
+	display: flex;
+	justify-content: center;
+}
+
+.click-img {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	max-width: 900px;
+	width: 100%;
+}
+.click-img img {
+	max-width: 200px;
+	height: auto;
+	display: inline-block;
+}
+
+.video video {
+	max-width: 70%;
+	height: auto;
+	display: inline-block;
+} */
+
+.img-vid img {
+	width: 15%;
+	height: auto;
+	margin-left: 4rem;
+	display: inline-block;
+	transform: translate(4rem, 0);
+}
+
+.img-vid video {
+	width: 35rem;
+	display: inline-block;
+	margin: -2rem auto;
+	margin-left: 8rem;
+	border-radius: 1rem;
+}
+
+.img-vid-desc {
+	display: block;
+	text-align: center;
+	gap: 1rem;
+	align-items: center;
+	margin-top: 2rem;
+}
+
+.img-vid-desc h3 {
+	font-size: 2.2rem;
+	padding-top: 4rem;
+	transform: translate(-20rem, 0);
+	padding: 1.5rem 0;
+}
+
+.img-vid-desc ul {
+	transform: translate(-5rem, 0);
+	line-height: 2rem;
+	text-align: left;
+	font-size: 1.3rem;
+	list-style: none;
+}
+
+div.img-vid-desc {
+	margin-left: 35rem;
+}
+
+#right-list {
+	margin-left: 12rem;
+}
+
+.quote-point {
+	padding: 0.6rem 0.8rem;
+	font-size: 1rem;
+	margin: 1rem -1rem;
+	letter-spacing: 1px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	color: #566375;
+	background-color: #dbeafe;
+	display: inline-block;
+	border-radius: 1.5rem;
+}
+
+.upper-border img {
+	height: 3rem;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.lower-border img {
+	height: 3rem;
+	width: 100%;
+	margin-top: 1rem;
+}
+
+.ad-board-container {
+	background-color: #eff3f9;
+	display: flex;
+}
+
+.ad-board-content {
+	margin-left: 2rem;
+	width: 100%;
+}
+
+.ad-board-content img {
+	width: 300px;
+	height: 300px;
+}
+
+#vector-image {
+	width: 40rem;
+	height: auto;
+	margin-top: 8rem;
+	/* transform: translate(-4rem, -30rem); */
+}
+div.vector-image {
+	width: 100%;
+	text-align: center;
+}
+
+.ad-board-content p {
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: left;
+	margin-left: -2rem;
+	color: #4b5563;
+}
+
+.ad-board-content h3 {
+	font-size: 4rem;
+	margin-left: -1rem;
+	line-height: 3.8rem;
+	margin-bottom: 2rem;
+	/* margin-left: 4rem; */
+}
+
+.check-list {
+	list-style-type: none; /* remove normal bullets */
+	padding: 0;
+	margin: 0;
+	color: #4b5563;
+}
+
+.check-list li {
+	font-size: 1.5rem;
+	position: relative; /* so we can place the bullet absolutely */
+	padding-left: 40px; /* space for the custom bullet on the left */
+	margin-bottom: 1em; /* space between list items */
+}
+
+.check-list li::before {
+	content: "✔"; /* or "\2713" for a check mark */
+	color: #ffffff; /* color of the checkmark itself */
+	background-color: #3399ff; /* blue circle background */
+	border-radius: 50%; /* makes the background a circle */
+	display: inline-flex; /* so we can center the check inside */
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+
+	/* Position it to the left side of the list item text */
+	position: absolute;
+	left: 0;
+	top: 0; /* you can tweak this to align vertically as you like */
+	margin-top: 2px;
+}
+
+.ad-btns {
+	padding: 1rem 3rem;
+	margin: 0.5rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+	border-radius: 0.5rem;
+}
+div.ad-btns {
+	background-color: red;
+}
+
+#tell-btn {
+	background-color: #1d9aed;
+	border: none;
+	color: #fff;
+	margin-left: -1rem;
+}
+
+#explore-btn {
+	background-color: #fff;
+	color: #1d9aed;
+	border: 2px solid #1d9aed;
+}
+
+div.tutorial-header {
+	width: 100%;
+	/* background-color: red; */
+	display: flex;
+}
+
+.tutorial-heading {
+	font-size: 3rem;
+	color: #000;
+	padding: 2rem;
+	margin-left: 15rem;
+	display: inline-block;
+}
+
+div.tutorial-image {
+	display: block;
+	margin-top: 4rem;
+	margin-right: 10rem;
+}
+
+div.variable-speed {
+	display: flex;
+	margin-left: 2rem;
+}
+
+div.variable-speed-video {
+	margin-left: 2rem;
+	width: 100%;
+}
+
+div.variable-speed video {
+	width: 25rem;
+	display: inline-block;
+	margin-top: 3rem;
+	margin-left: 4rem;
+	border-radius: 1rem;
+}
+
+div.variable-speed p {
+	font-size: 1.5rem;
+	padding: 1rem;
+	text-align: left;
+	margin-left: -2rem;
+	color: #4b5563;
+}
+
+div.variable-speed h3 {
+	font-size: 2rem;
+	margin-left: -1rem;
+	margin-bottom: 2rem;
+}
+
+div.variable-speed-content {
+	width: 100%;
+}
+
+div.tut-controllers {
+	margin: 0 auto;
+	display: block;
+}

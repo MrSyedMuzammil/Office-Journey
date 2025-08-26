@@ -1,0 +1,174 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(181, 175, 163);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.container {
+  text-align: center;
+  max-width: 900px;
+  background-color: rgba(255, 166, 0, 0.247);
+}
+
+h1 {
+  color: #0d6efd;
+}
+
+.examples-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  background-color: #6c757d;
+}
+
+.card-container {
+  flex-basis: 400px;
+}
+
+h2 {
+  color: #343a40;
+  margin-bottom: 1rem;
+}
+
+/* ========================================================
+        BEFORE: Non-semantic, content-based classes.
+        ========================================================
+        - The class name "card-japan" is not reusable for other countries.
+        - We have to create a separate, almost identical class "card-italy" just to change the image.
+        - This leads to duplicated CSS.
+    */
+
+.card-japan,
+.card-italy {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden; /* Ensures the image corners are rounded */
+  text-align: left;
+}
+
+.card-japan-img,
+.card-italy-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Here we are forced to define background images based on the class */
+.card-japan-img {
+  background-image: url("https://placehold.co/400x200/ffb7c5/800080?text=Japan");
+}
+
+.card-italy-img {
+  background-image: url("https://placehold.co/400x200/90ee90/006400?text=Italy");
+}
+
+.card-content {
+  padding: 1.5rem;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+}
+
+.card-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.card-button:hover {
+  background-color: #5a6268;
+}
+
+/* ========================================================
+        AFTER: Semantic classes using BEM (Block__Element--Modifier)
+        ========================================================
+        - "card" is the Block. It's a reusable, standalone component.
+        - "card__image", "card__content", "card__title" are Elements. They are parts of the card.
+        - "card--featured" is a Modifier. It represents a special version of the card.
+        - This is clean, scalable, and easy to understand.
+    */
+
+.card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  text-align: left;
+  border: 2px solid transparent; /* Prepare for modifier border */
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card__image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.card__content {
+  padding: 1.5rem;
+}
+
+.card__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+  color: #212529;
+}
+
+.card__text {
+  margin: 0 0 1.5rem 0;
+  line-height: 1.6;
+  color: #495057;
+}
+
+.card__button {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+.card__button:hover {
+  background-color: #0b5ed7;
+}
+
+/* This is our MODIFIER class */
+.card--featured {
+  border: 2px solid #fdc50d;
+  box-shadow: 0 8px 30px rgba(253, 197, 13, 0.3);
+}
+
+.card--featured .card__title {
+  color: #0b5ed7; /* Make the title stand out on featured cards */
+}

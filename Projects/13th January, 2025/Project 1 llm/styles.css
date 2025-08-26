@@ -1,0 +1,110 @@
+/* 1) Reset & Box-Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* 2) Navigation Bar Container */
+  nav {
+    height: 80px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Logo on one side, menu on the other */
+    padding: 0 1rem; /* Some horizontal padding if desired */
+  }
+  
+  /* 3) Logo Image */
+  .logo-image img {
+    height: 80px;
+    border: 2px solid rgb(108, 127, 223);
+  }
+  
+  /* 4) Main Navigation List */
+  .navbar {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Spacing between items */
+  }
+  
+  /* 5) Nav Links (Home, About, etc.) */
+  .navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s;
+  }
+  
+  .navbar li a:hover {
+    background-color: #444; /* Slight hover effect */
+  }
+  
+  /* 6) Dropdown Container */
+  .nav-dropdown {
+    position: relative; /* Needed for absolute positioning of dropdown content */
+  }
+  
+  /* 7) Dropdown Toggle (Services) */
+  .dropdown-btn {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    transition: background-color 0.3s;
+  }
+  
+  /* Optional hover styling for the dropdown button */
+  .dropdown-btn:hover {
+    background-color: #444;
+  }
+  
+  /* 8) Dropdown Menu Content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%; /* Just below the button */
+    left: 0;   /* Align with the left edge of the parent */
+    background-color: #fff;
+    list-style-type: none;
+    min-width: 150px; /* Set a width so the dropdown isn't collapsed */
+  }
+  
+  /* Reveal the dropdown on hover */
+  .nav-dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* 9) Individual Dropdown Items */
+  .dropdown-content li a {
+    color: #333;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content li a:hover {
+    background-color: #eee;
+  }
+  
+  /* 10) Buy Now Button */
+  .buy-btn button {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+    border: 2px solid #333;
+    padding: 8px 16px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .buy-btn button:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  

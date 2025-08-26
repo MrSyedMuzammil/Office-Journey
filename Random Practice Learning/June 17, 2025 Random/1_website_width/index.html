@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BEM Naming Convention</title>
+    <!-- We'll use Font Awesome for the icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lesson 2: BEM Naming Convention</h1>
+
+      <div class="examples-wrapper">
+        <div class="card-container">
+          <h2>Before</h2>
+          <!-- This card is styled with the ".card-japan" class. It's not reusable. -->
+          <div class="card-japan">
+            <div class="card-japan-img"></div>
+            <div class="card-content">
+              <h3 class="card-title">Visiting Japan</h3>
+              <p class="card-text">
+                Discover the ancient temples and bustling cities.
+              </p>
+              <button class="card-button">Read More</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <h2>After (Using BEM)</h2>
+          <!-- 
+                    This card uses the ".card" Block.
+                    All its children use "__element" classes.
+                    It's reusable for ANY country. We just change the image src.
+                -->
+          <div class="card">
+            <img
+              class="card__image"
+              src="https://placehold.co/400x200/ffb7c5/800080?text=Japan"
+              alt="A scenic view of Japan"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Visiting Japan</h3>
+              <p class="card__text">
+                Discover the ancient temples and bustling cities.
+              </p>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <h2>After (BEM with a Modifier)</h2>
+          <!-- 
+                    This is the SAME component, but we've added a "--modifier" class
+                    to create a special "featured" version. No duplicated CSS needed!
+                -->
+          <div class="card card--featured">
+            <img
+              class="card__image"
+              src="https://placehold.co/400x200/90ee90/006400?text=Italy"
+              alt="A scenic view of Italy"
+            />
+            <div class="card__content">
+              <h3 class="card__title">Featured: Italy</h3>
+              <p class="card__text">
+                Explore the beautiful coastline and historic ruins.
+              </p>
+              <a href="#" class="card__button">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

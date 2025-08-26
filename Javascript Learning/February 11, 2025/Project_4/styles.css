@@ -1,0 +1,23 @@
+/* styles.css */
+
+/* Basic styling for the user profile page */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #eef;
+	margin: 0;
+	padding: 20px;
+	text-align: center;
+}
+
+#profileContainer {
+	background-color: #fff;
+	border: 1px solid #ccc;
+	padding: 20px;
+	margin: 20px auto;
+	max-width: 500px;
+	border-radius: 8px;
+}
+
+h1 {
+	color: #333;
+}

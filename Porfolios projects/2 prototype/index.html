@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CodeCraft - We Build Digital Excellence</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom Styles & Advanced Features -->
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #0d1117; /* GitHub Dark */
+        color: #c9d1d9; /* GitHub Dark Text */
+      }
+      /* Custom accent color */
+      .accent-color {
+        color: #58a6ff;
+      }
+      .bg-accent-color {
+        background-color: #58a6ff;
+      }
+      .border-accent-color {
+        border-color: #58a6ff;
+      }
+      .ring-accent-color:focus {
+        --tw-ring-color: #58a6ff;
+      }
+
+      /* Card & UI Element Backgrounds */
+      .card-bg {
+        background-color: #161b22;
+        border: 1px solid #30363d;
+      }
+
+      /* Hero Section Styling */
+      #home {
+        position: relative;
+        overflow: hidden;
+      }
+      #particles-js {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }
+      .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0d1117;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #30363d;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #58a6ff;
+      }
+
+      /* Modal Styles */
+      .modal {
+        transition: opacity 0.3s ease;
+      }
+      .modal-content {
+        transition: transform 0.3s ease;
+      }
+
+      /* Filter button active state */
+      .filter-btn.active {
+        background-color: #58a6ff;
+        color: #0d1117;
+        font-weight: 600;
+      }
+
+      /* --- NEW PORTFOLIO CARD STYLES --- */
+      .portfolio-card {
+        position: relative;
+        border-radius: 0.5rem;
+        overflow: hidden;
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        border: 1px solid #30363d;
+      }
+      .portfolio-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.9) 0%,
+          rgba(0, 0, 0, 0.1) 50%
+        );
+        transition: background 0.4s ease-out;
+      }
+      .portfolio-card-content {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 1.5rem;
+        transform: translateY(100%);
+        opacity: 0;
+        transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+      }
+      .portfolio-card:hover::before {
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1) 0%,
+          rgba(0, 0, 0, 0.4) 70%
+        );
+      }
+      .portfolio-card:hover .portfolio-card-content {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body class="antialiased">
+    <!-- Header -->
+    <header
+      class="bg-gray-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-gray-800"
+    >
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <a href="#home" class="text-2xl font-bold text-white"
+          >CodeCraft<span class="accent-color">.</span></a
+        >
+        <div class="hidden md:flex space-x-6 items-center">
+          <a
+            href="#tutorials"
+            class="hover:accent-color transition-colors duration-300"
+            >Tutorials</a
+          >
+          <a
+            href="#portfolio"
+            class="hover:accent-color transition-colors duration-300"
+            >Our Work</a
+          >
+          <a
+            href="#services"
+            class="hover:accent-color transition-colors duration-300"
+            >Services</a
+          >
+          <a
+            href="#team"
+            class="hover:accent-color transition-colors duration-300"
+            >Our Team</a
+          >
+          <a
+            href="#contact"
+            class="bg-accent-color text-gray-900 font-semibold px-4 py-2 rounded-md hover:bg-sky-400 transition-colors duration-300"
+            >Contact Us</a
+          >
+        </div>
+        <button id="mobile-menu-button" class="md:hidden text-white">
+          <i data-feather="menu"></i>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="hidden md:hidden px-6 pb-4 space-y-2">
+        <a
+          href="#tutorials"
+          class="block hover:accent-color transition-colors duration-300"
+          >Tutorials</a
+        >
+        <a
+          href="#portfolio"
+          class="block hover:accent-color transition-colors duration-300"
+          >Our Work</a
+        >
+        <a
+          href="#services"
+          class="block hover:accent-color transition-colors duration-300"
+          >Services</a
+        >
+        <a
+          href="#team"
+          class="block hover:accent-color transition-colors duration-300"
+          >Our Team</a
+        >
+        <a
+          href="#contact"
+          class="block mt-2 bg-accent-color text-gray-900 font-semibold px-4 py-2 rounded-md hover:bg-sky-400 transition-colors duration-300 text-center"
+          >Contact Us</a
+        >
+      </div>
+    </header>
+
+    <main class="container mx-auto px-6">
+      <!-- Home/Hero Section -->
+      <section
+        id="home"
+        class="min-h-screen flex items-center justify-center text-center"
+      >
+        <div id="particles-js"></div>
+        <div class="hero-content max-w-4xl">
+          <h1
+            class="text-4xl md:text-6xl font-extrabold text-white leading-tight mb-4"
+          >
+            We Build <span id="typed-text" class="accent-color"></span>
+          </h1>
+          <p class="text-lg md:text-xl text-gray-400 mb-8">
+            A creative agency dedicated to building high-quality, scalable, and
+            beautiful digital experiences.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a
+              href="#portfolio"
+              class="bg-accent-color text-gray-900 font-bold px-8 py-3 rounded-md text-lg hover:bg-sky-400 transition-transform duration-300 transform hover:scale-105"
+              >View Our Work</a
+            >
+            <a
+              href="#contact"
+              class="bg-gray-700 text-white font-bold px-8 py-3 rounded-md text-lg hover:bg-gray-600 transition-transform duration-300 transform hover:scale-105"
+              >Get a Quote</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- Tutorials Section -->
+      <section id="tutorials" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">
+            Learn With Us
+          </h2>
+          <p class="text-gray-400 mt-3">
+            Dive into our team's latest coding tutorials on YouTube.
+          </p>
+        </div>
+        <div
+          id="tutorial-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Tutorial cards will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">Our Work</h2>
+          <p class="text-gray-400 mt-3">
+            A selection of our professional projects.
+          </p>
+        </div>
+        <!-- Filter Buttons -->
+        <div
+          id="portfolio-filters"
+          class="flex justify-center flex-wrap gap-3 mb-12"
+        >
+          <button
+            class="filter-btn active px-4 py-2 rounded-md transition-colors duration-300"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="filter-btn px-4 py-2 rounded-md transition-colors duration-300"
+            data-filter="web"
+          >
+            Web Apps
+          </button>
+          <button
+            class="filter-btn px-4 py-2 rounded-md transition-colors duration-300"
+            data-filter="uiux"
+          >
+            UI/UX
+          </button>
+          <button
+            class="filter-btn px-4 py-2 rounded-md transition-colors duration-300"
+            data-filter="mobile"
+          >
+            Mobile
+          </button>
+        </div>
+        <div
+          id="portfolio-grid"
+          class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Portfolio items will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">
+            What We Offer
+          </h2>
+          <p class="text-gray-400 mt-3">
+            Crafting digital solutions from the ground up.
+          </p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Service Cards -->
+          <div
+            class="card-bg p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <i
+              data-feather="layout"
+              class="h-12 w-12 accent-color mx-auto mb-4"
+            ></i>
+            <h3 class="text-2xl font-bold text-white mb-2">Web Development</h3>
+            <p class="text-gray-400">
+              Building fast, responsive, and scalable full-stack web
+              applications tailored to your business needs.
+            </p>
+          </div>
+          <div
+            class="card-bg p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <i
+              data-feather="smartphone"
+              class="h-12 w-12 accent-color mx-auto mb-4"
+            ></i>
+            <h3 class="text-2xl font-bold text-white mb-2">App Development</h3>
+            <p class="text-gray-400">
+              Creating high-performance mobile apps for iOS and Android with a
+              focus on great user experience.
+            </p>
+          </div>
+          <div
+            class="card-bg p-8 rounded-lg text-center transform hover:-translate-y-2 transition-transform duration-300"
+          >
+            <i
+              data-feather="pen-tool"
+              class="h-12 w-12 accent-color mx-auto mb-4"
+            ></i>
+            <h3 class="text-2xl font-bold text-white mb-2">UI/UX Design</h3>
+            <p class="text-gray-400">
+              Designing beautiful, intuitive, and user-centric interfaces that
+              provide an enjoyable digital experience.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section id="team" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">
+            Meet Our Team
+          </h2>
+          <p class="text-gray-400 mt-3">
+            The creative minds behind our success.
+          </p>
+        </div>
+        <div id="team-grid" class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <!-- Team members will be dynamically inserted here -->
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-24">
+        <div class="text-center mb-16">
+          <h2 class="text-4xl md:text-5xl font-bold text-white">
+            Let's Build Together
+          </h2>
+          <p class="text-gray-400 mt-3">
+            Have a project in mind? We'd love to hear about it.
+          </p>
+        </div>
+        <div class="max-w-xl mx-auto card-bg p-8 rounded-lg">
+          <form id="contact-form" class="space-y-6">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+              class="w-full bg-gray-800 border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 ring-accent-color"
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+              class="w-full bg-gray-800 border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 ring-accent-color"
+            />
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+              class="w-full bg-gray-800 border-gray-700 rounded-md py-3 px-4 text-white focus:outline-none focus:ring-2 ring-accent-color"
+            ></textarea>
+            <button
+              type="submit"
+              class="w-full bg-accent-color text-gray-900 font-bold py-3 px-4 rounded-md hover:bg-sky-400 transition-colors duration-300"
+            >
+              Send Message
+            </button>
+          </form>
+          <div id="form-status" class="mt-4 text-center"></div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800">
+      <div class="container mx-auto px-6 py-8 text-center text-gray-400">
+        <p>&copy; 2024 CodeCraft. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button
+      id="back-to-top"
+      class="fixed bottom-8 right-8 bg-accent-color text-gray-900 p-3 rounded-full shadow-lg hidden hover:bg-sky-400 transition-all duration-300 z-50"
+    >
+      <i data-feather="arrow-up"></i>
+    </button>
+
+    <!-- Portfolio Modal -->
+    <div
+      id="portfolio-modal"
+      class="modal fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center p-4 z-50 opacity-0 pointer-events-none"
+    >
+      <div
+        id="modal-content"
+        class="modal-content card-bg max-w-3xl w-full rounded-lg shadow-xl overflow-hidden transform scale-95"
+      >
+        <!-- Modal content will be injected here -->
+      </div>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+      // --- DATA ---
+      const tutorials = [
+        {
+          title: "Full Stack MERN E-Commerce App",
+          desc: "Our team guides you through building a complete e-commerce platform with MongoDB, Express, React, and Node.js.",
+          img: "https://placehold.co/600x400/0d1117/58a6ff?text=MERN+E-commerce",
+          videoUrl: "#",
+          codeUrl: "#",
+        },
+        {
+          title: "Interactive Charts with D3.js",
+          desc: "A deep dive into data visualization, creating dynamic and interactive charts for your projects with D3.js.",
+          img: "https://placehold.co/600x400/0d1117/58a6ff?text=D3.js+Charts",
+          videoUrl: "#",
+          codeUrl: "#",
+        },
+        {
+          title: "CI/CD Pipelines with GitHub Actions",
+          desc: "Learn how we automate our development workflow, from testing to deployment, using GitHub Actions.",
+          img: "https://placehold.co/600x400/0d1117/58a6ff?text=GitHub+Actions",
+          videoUrl: "#",
+          codeUrl: "#",
+        },
+      ];
+
+      const portfolioItems = [
+        {
+          id: 1,
+          title: "Fintech Dashboard",
+          category: "web",
+          img: "https://placehold.co/800x600/0d1117/c9d1d9?text=Fintech+App",
+          desc: "A real-time financial analytics dashboard for a major investment firm. Built with React, D3.js, and a WebSocket backend for live data streaming. It provides complex data visualizations and reporting tools.",
+          tags: ["React", "D3.js", "Node.js", "WebSocket", "PostgreSQL"],
+          liveUrl: "#",
+          details:
+            "This project involved creating a highly performant and secure dashboard to visualize millions of data points in real-time. The challenge was to ensure the UI remained responsive while handling constant data updates.",
+        },
+        {
+          id: 2,
+          title: "Event Management Mobile App",
+          category: "mobile",
+          img: "https://placehold.co/800x600/0d1117/c9d1d9?text=Event+App",
+          desc: "A cross-platform mobile app for a conference organizer, featuring schedules, speaker bios, interactive maps, and real-time notifications. Built with React Native.",
+          tags: ["React Native", "Firebase", "Push Notifications"],
+          liveUrl: "#",
+          details:
+            "The app serves thousands of attendees, providing a seamless experience. Firebase was used for real-time database updates and push notifications to keep users informed of schedule changes.",
+        },
+        {
+          id: 3,
+          title: "SaaS Platform UI/UX Redesign",
+          category: "uiux",
+          img: "https://placehold.co/800x600/0d1117/c9d1d9?text=SaaS+UI",
+          desc: "A complete UI/UX overhaul for a B2B SaaS product. The project involved user research, wireframing, prototyping in Figma, and creating a comprehensive design system.",
+          tags: ["Figma", "UI/UX Research", "Design System", "Prototyping"],
+          liveUrl: "#",
+          details:
+            "Through extensive user research and iterative design, we increased user engagement by 40% and reduced onboarding time by half. The new design system ensures brand consistency across the platform.",
+        },
+      ];
+
+      const teamMembers = [
+        {
+          name: "[Your Name]",
+          role: "Founder & CEO",
+          img: "https://placehold.co/400x400/161b22/c9d1d9?text=CEO",
+        },
+        {
+          name: "Jane Doe",
+          role: "Lead Developer",
+          img: "https://placehold.co/400x400/161b22/c9d1d9?text=Dev",
+        },
+        {
+          name: "John Smith",
+          role: "UI/UX Designer",
+          img: "https://placehold.co/400x400/161b22/c9d1d9?text=Designer",
+        },
+        {
+          name: "Emily White",
+          role: "Project Manager",
+          img: "https://placehold.co/400x400/161b22/c9d1d9?text=PM",
+        },
+      ];
+
+      document.addEventListener("DOMContentLoaded", () => {
+        feather.replace();
+        initTyped();
+        initParticles();
+        initScrollReveal();
+        renderTutorials();
+        renderPortfolio("all");
+        renderTeam();
+        setupEventListeners();
+      });
+
+      // --- DYNAMIC CONTENT RENDERING ---
+      function renderTutorials() {
+        const grid = document.getElementById("tutorial-grid");
+        grid.innerHTML = tutorials
+          .map(
+            (tut) => `
+                <div class="card-bg rounded-lg overflow-hidden shadow-lg transform hover:-translate-y-2 transition-transform duration-300">
+                    <img src="${tut.img}" alt="${tut.title}" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2 text-white">${tut.title}</h3>
+                        <p class="text-gray-400 mb-4">${tut.desc}</p>
+                        <div class="flex justify-between items-center">
+                            <a href="${tut.videoUrl}" target="_blank" class="bg-accent-color text-gray-900 font-semibold px-4 py-2 rounded-md hover:bg-sky-400 transition-colors duration-300">Watch Now</a>
+                            <a href="${tut.codeUrl}" target="_blank" class="text-gray-400 hover:accent-color transition-colors duration-300">View Code</a>
+                        </div>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      function renderPortfolio(filter) {
+        const grid = document.getElementById("portfolio-grid");
+        const filteredItems =
+          filter === "all"
+            ? portfolioItems
+            : portfolioItems.filter((item) => item.category === filter);
+
+        grid.innerHTML = filteredItems
+          .map(
+            (item) => `
+                <div class="portfolio-card group cursor-pointer" style="background-image: url('${item.img}')" onclick="openModal(${item.id})">
+                    <div class="portfolio-card-content">
+                        <h3 class="text-xl font-bold text-white">${item.title}</h3>
+                        <p class="text-gray-400 uppercase text-sm">${item.category}</p>
+                    </div>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      function renderTeam() {
+        const grid = document.getElementById("team-grid");
+        grid.innerHTML = teamMembers
+          .map(
+            (member) => `
+                <div class="text-center">
+                    <img src="${member.img}" alt="${member.name}" class="w-32 h-32 rounded-full mx-auto mb-4 border-2 border-gray-700 object-cover">
+                    <h3 class="text-xl font-semibold text-white">${member.name}</h3>
+                    <p class="text-gray-400">${member.role}</p>
+                </div>
+            `
+          )
+          .join("");
+      }
+
+      // --- UI & EVENT LISTENERS ---
+      function setupEventListeners() {
+        const mobileMenuButton = document.getElementById("mobile-menu-button");
+        const mobileMenu = document.getElementById("mobile-menu");
+        mobileMenuButton.addEventListener("click", () =>
+          mobileMenu.classList.toggle("hidden")
+        );
+        mobileMenu
+          .querySelectorAll("a")
+          .forEach((link) =>
+            link.addEventListener("click", () =>
+              mobileMenu.classList.add("hidden")
+            )
+          );
+
+        const backToTopButton = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => {
+          if (window.scrollY > 300) backToTopButton.classList.remove("hidden");
+          else backToTopButton.classList.add("hidden");
+        });
+        backToTopButton.addEventListener("click", () =>
+          window.scrollTo({ top: 0, behavior: "smooth" })
+        );
+
+        const filterButtons = document.querySelectorAll(".filter-btn");
+        filterButtons.forEach((button) => {
+          button.addEventListener("click", () => {
+            filterButtons.forEach((btn) => btn.classList.remove("active"));
+            button.classList.add("active");
+            renderPortfolio(button.dataset.filter);
+          });
+        });
+
+        const contactForm = document.getElementById("contact-form");
+        const formStatus = document.getElementById("form-status");
+        contactForm.addEventListener("submit", (e) => {
+          e.preventDefault();
+          formStatus.textContent = "Message sent successfully!";
+          formStatus.className = "text-green-400 mt-4 text-center";
+          contactForm.reset();
+          setTimeout(() => (formStatus.textContent = ""), 5000);
+        });
+      }
+
+      // --- MODAL LOGIC ---
+      const modal = document.getElementById("portfolio-modal");
+      const modalContent = document.getElementById("modal-content");
+
+      function openModal(id) {
+        const item = portfolioItems.find((p) => p.id === id);
+        modalContent.innerHTML = `
+                <div class="p-8 max-h-[90vh] overflow-y-auto">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h2 class="text-3xl font-bold text-white">${
+                              item.title
+                            }</h2>
+                            <p class="text-gray-400 uppercase text-sm mt-1">${
+                              item.category
+                            }</p>
+                        </div>
+                        <button onclick="closeModal()" class="text-gray-400 hover:text-white text-4xl leading-none">&times;</button>
+                    </div>
+                    <img src="${item.img}" alt="${
+          item.title
+        }" class="w-full h-auto object-cover rounded-lg mb-6">
+                    <h3 class="text-xl font-semibold text-white mb-2">About this project</h3>
+                    <p class="text-gray-300 mb-6">${item.details}</p>
+                    <h3 class="text-xl font-semibold text-white mb-3">Technologies Used</h3>
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        ${item.tags
+                          .map(
+                            (tag) =>
+                              `<span class="bg-gray-700 text-sm font-medium px-3 py-1 rounded-full">${tag}</span>`
+                          )
+                          .join("")}
+                    </div>
+                    <a href="${
+                      item.liveUrl
+                    }" target="_blank" class="bg-accent-color text-gray-900 font-bold px-6 py-3 rounded-md hover:bg-sky-400 transition-colors duration-300 inline-block">View Live Project</a>
+                </div>
+            `;
+        modal.classList.remove("opacity-0", "pointer-events-none");
+        modalContent.classList.remove("scale-95");
+      }
+
+      function closeModal() {
+        modal.classList.add("opacity-0", "pointer-events-none");
+        modalContent.classList.add("scale-95");
+      }
+
+      window.addEventListener(
+        "keydown",
+        (e) => e.key === "Escape" && closeModal()
+      );
+      modal.addEventListener(
+        "click",
+        (e) => e.target === modal && closeModal()
+      );
+
+      // --- ANIMATION LIBRARIES ---
+      function initTyped() {
+        new Typed("#typed-text", {
+          strings: [
+            "Scalable Web Apps.",
+            "Intuitive Mobile Apps.",
+            "Engaging UI/UX Designs.",
+            "Your Vision to Reality.",
+          ],
+          typeSpeed: 50,
+          backSpeed: 30,
+          backDelay: 2000,
+          loop: true,
+        });
+      }
+
+      function initParticles() {
+        particlesJS("particles-js", {
+          particles: {
+            number: { value: 80, density: { enable: true, value_area: 800 } },
+            color: { value: "#58a6ff" },
+            shape: { type: "circle" },
+            opacity: { value: 0.5, random: false },
+            size: { value: 3, random: true },
+            line_linked: {
+              enable: true,
+              distance: 150,
+              color: "#58a6ff",
+              opacity: 0.4,
+              width: 1,
+            },
+            move: {
+              enable: true,
+              speed: 2,
+              direction: "none",
+              random: false,
+              straight: false,
+              out_mode: "out",
+              bounce: false,
+            },
+          },
+          interactivity: {
+            detect_on: "canvas",
+            events: {
+              onhover: { enable: true, mode: "grab" },
+              onclick: { enable: true, mode: "push" },
+              resize: true,
+            },
+            modes: {
+              grab: { distance: 140, line_linked: { opacity: 1 } },
+              push: { particles_nb: 4 },
+            },
+          },
+          retina_detect: true,
+        });
+      }
+
+      function initScrollReveal() {
+        const sr = ScrollReveal({
+          origin: "bottom",
+          distance: "60px",
+          duration: 1000,
+          delay: 200,
+          reset: false,
+        });
+        sr.reveal("h2, p, .filter-btn");
+        sr.reveal(
+          "#tutorial-grid div, .portfolio-card, #services div, #team-grid div, #contact-form",
+          { interval: 100 }
+        );
+      }
+    </script>
+  </body>
+</html>

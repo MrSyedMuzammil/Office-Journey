@@ -1,0 +1,17 @@
+70
+50
+20
+20
+20
+20
+20
+
+control + p  >>>>> For moving to another file inside of the vs code editor.
+
+using tab key to move from one tag to another :
+
+<h1>If you click tab after writing anything here</h2>
+<p>The cursor will move at the beginning of the next tag</p>
+
+
+Ctrl + Space >>>>>>>>> This is used to ask for suggestion inside of the vs code

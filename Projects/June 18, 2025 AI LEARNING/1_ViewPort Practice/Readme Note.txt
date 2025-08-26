@@ -1,0 +1,1 @@
+To see the difference, comment out the viewport in meta tags inside the head section of the html document.

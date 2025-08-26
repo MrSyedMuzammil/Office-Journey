@@ -1,0 +1,50 @@
+/*
+  ========================================================================
+  GENERAL STYLING
+  This is a simple stylesheet to demonstrate the viewport effect.
+  ========================================================================
+*/
+body {
+  /* A good practice for basic text styling and centering our content */
+  font-family: sans-serif;
+  background-color: #f0f0f0;
+
+  /* Using Flexbox to easily center the card on the page */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+/*
+  ========================================================================
+  THE DEMO CARD
+  ========================================================================
+*/
+.card {
+  /*
+      REAL-WORLD USE: We are using a fixed pixel width here ON PURPOSE
+      for this specific demonstration. This helps to clearly show the
+      "zooming" effect when the viewport tag is missing.
+      In a real responsive project, this width would likely be
+      a percentage or have a max-width.
+    */
+  width: 350px;
+
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card h1 {
+  color: #333333;
+}
+
+.card p {
+  color: #666666;
+  line-height: 1.6; /* Best practice: Use unitless line-height for readability */
+}

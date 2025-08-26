@@ -1,0 +1,119 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-container {
+  text-align: center;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 1rem;
+  max-width: 100%;
+  width: 500px;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: rgb(158, 158, 158);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  width: 100%;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+.progress {
+  background-color: #3498db;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  height: 3px;
+  width: 0%;
+  z-index: -1;
+  transition: 0.5s ease;
+}
+
+
+.circle {
+  content: ' ';
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  border: .2rem solid grey;
+  z-index: -1;
+  background-color: antiquewhite;
+  transition: 0.5s ease;
+  
+}
+
+.circle.active {
+ border: .2rem solid #3498db;
+}
+
+.btn {
+  background-color: #3498db;
+  border: 0.2rem solid black;
+  border-radius: 4px;
+  padding: 0.2rem;
+  color: #fff;
+  font-weight: 500;
+  width: 5rem;
+  font-size: 14px;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn:focus {
+  outline: 0;
+}
+
+.btn:disabled {
+  background-color: grey;
+  color: #fff;
+  border: 0.2 rem solid grey;
+  cursor: not-allowed;
+}
+/* Add click animation */
+.btn.clicked {
+  transform: scale(0.95);
+  transition: transform 0.1s;
+}
+/* Add these keyframes */
+@keyframes activate {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+@keyframes deactivate {
+  0% { transform: scale(1); }
+  50% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+
+.circle.active {
+  animation: activate 0.5s ease-out;
+}
+
+.circle:not(.active) {
+  animation: deactivate 0.5s ease-out;
+}

@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+	background-color: #d1d1d1;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	gap: 2rem;
+}
+
+.card {
+	background-color: #fff;
+	border: 0.1rem solid orange;
+	width: 10rem;
+	height: 10rem;
+}
+
+.makeUp {
+  background-color: orange;
+  color: rgb(43, 76, 50);
+  border-radius: 10px;
+  align-content: center;
+  text-align: center;
+  box-shadow: 0 0 20px orange;
+  transition: all 0.5s ease-in;
+}

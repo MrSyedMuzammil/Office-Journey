@@ -1,0 +1,35 @@
+/* Styles for spanning columns */
+.grid-container {
+	display: grid;
+	grid-template-columns: 1fr 300px; /* Main + Sidebar */
+	grid-template-rows: 100px 1fr; /* Header + Main/Sidebar */
+	gap: 15px;
+	padding: 20px;
+	background: #f0f0f0;
+}
+
+.header {
+	grid-column: 1 / -1; /* Spans from first to last column */
+	background: #3498db;
+	padding: 20px;
+	text-align: center;
+	color: white;
+	font-family: Arial, sans-serif;
+	border-radius: 8px;
+}
+
+.main {
+	background: #2ecc71;
+	padding: 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+	border-radius: 8px;
+}
+
+.sidebar {
+	background: #e67e22;
+	padding: 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+	border-radius: 8px;
+}

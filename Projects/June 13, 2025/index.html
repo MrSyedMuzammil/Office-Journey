@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A broken backpack</title>
+    <link rel="icon" type="image/x-icon" href="/Assets/Images/favicon.ico">
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://kit.fontawesome.com/a36f02765b.js" crossorigin="anonymous"></script>
+  
+
+   
+  
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="navbar">
+        <div class="main-nav-container">
+          <a href="#" class="nav-link logo-container"
+            ><img src="Assets/Images/Logo.webp" alt="The Logo" id="logo"
+          /></a>
+
+          <ul class="nav-menu">
+            <li class="nav-item has-megamenu">
+              <a href="#" class="nav-link">Destinations</a>
+
+              <!-- The Mega Menu Panel-->
+               <div class="mega-menu">
+                <div class="megamenu-content">
+                  <div class="megamenu-column">
+                    <h4>Americas</h4>
+                    <ul>
+                      <li><a href="#">Canada</a></li>
+                      <li><a href="#">Mexico</a></li>
+                      <li><a href="#">United States</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="megamenu-column">
+                    <h4>Asia</h4>
+                    <ul>
+                      <li><a href="#">Cambodia</a></li>
+                      <li><a href="#">India</a></li>
+                      <li><a href="#">Indonesia</a></li>
+                      <li><a href="#">Japan</a></li>
+                      <li><a href="#">Malasia</a></li>
+                      <li><a href="#">Phillipines</a></li>
+                      <li><a href="#">Singapore</a></li>
+                      <li><a href="#">Thailand</a></li>
+                      <li><a href="#">Vietnam</a></li>
+                    </ul>
+                  </div>
+
+                  <div class="megamenu-column">
+                    <h4>Europe</h4>
+                    <ul>
+                    <li><a href="#">Croatia</a></li>
+                    <li><a href="#">Czetch Republic</a></li>
+                    <li><a href="#">France</a></li>
+                    <li><a href="#">Germany</a></li>
+                    <li><a href="#">Greece</a></li>
+                    <li><a href="#">Italy</a></li>
+                    <li><a href="#">Portugal</a></li>
+                    <li><a href="#">Spain</a></li>
+                    <li><a href="#">Switzerland</a></li>
+                  </ul>
+                  </div>
+
+                  <div class="megamenu-column">
+                    <h4>Oceania</h4>
+                    <ul>
+                    <li><a href="#">Australia</a></li>
+                    <li><a href="#">New Zealand</a></li>
+                  </ul>
+                  </div>
+
+                </div>
+               </div> 
+               <!-- Mega menu Ends Here -->
+
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">Travel Tips</a>
+
+              <!-- Menu Design -->
+      
+                  <div class="dropdown-menu">
+                    <ul>
+                      <li><a href="#">Budget Travel</a></li>
+                      <li><a href="#">Camping</a></li>
+                      <li><a href="#">Eloping Guide</a></li>
+                      <li><a href="#">Hiking</a></li>
+                      <li><a href="#">Living Abroad</a></li>
+                      <li><a href="#">SIM Cards</a></li>
+                      <li><a href="#">Travel Insurance</a></li>
+                      <li><a href="#">Travel Finances</a></li>
+                      <li><a href="#">Visas</a></li>
+                    </ul>
+                  </div>
+              
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Gear</a>
+            </li>
+
+            <li class="nav-item has-dropdown">
+              <a href="#" class="nav-link">Working Online</a>
+
+              <div class="dropdown-menu">
+                <ul>
+                  <li><a href="#">Blogging</a></li>
+                  <li><a href="#">Job Positions</a></li>
+                  <li><a href="#">Travel Blogging</a></li>
+                  <li><a href="#">Digital Nomad Jobs</a></li>
+                  
+                </ul>
+              </div>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Resources</a>
+            </li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">Explore</a>
+            </li>
+
+            <li class="nav-item">
+              <button class="search-button" aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass" style="transform: rotateY(180deg);"></i>
+              </button>
+          </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero-container">
+        <section class="travel-tips-container">
+          <div class="travel-tips">
+            <h2 travel-tips-title>The best travel tips in one place</h2>
+            <p>Over 1000 travel blog posts from long-term travelers</p>
+            <button class="secondary-btn">Learn More</button>
+          </div>
+        </section>
+
+        <section class="destinations-map-container">
+          <div class="destination-map">
+            <h2 class="full-grid-line">Pick your next destination</h2>
+
+            <div class="destination-item Africa-container">
+              <i class="fa fa-map-marker pin" style="font-size: 8rem"></i>
+              <h3>Africas</h3>
+            </div>
+
+            <div class="destination-item America-container">
+              <i class="fa fa-map-marker pin" style="font-size: 8rem"></i>
+              <h3>Americas</h3>
+            </div>
+
+            <div class="destination-item Asia-container">
+              <i class="fa fa-map-marker pin" style="font-size: 8rem"></i>
+              <h3>Asia</h3>
+            </div>
+
+            <div class="destination-item Europe-container">
+              <i class="fa fa-map-marker pin" style="font-size: 8rem"></i>
+              <h3>Europe</h3>
+            </div>
+
+            <div class="destination-item Oceania-container">
+              <i class="fa fa-map-marker pin" style="font-size: 8rem"></i>
+              <h3>Oceania</h3>
+            </div>
+          </div>
+        </section>
+
+        <section class="destination-trending">
+          <div class="destination-container">
+            <div class="destination-info">
+              <h2>Trending Destinations</h2>
+              <p>
+                Explore some of the most popular destinations right now and
+                start planning your trip today.
+              </p>
+            </div>
+
+            <div class="destination destination-trend-thailand">
+              <img
+                src="Assets/Images/Thailand.webp"
+                alt=""
+                height="150px"
+                width="150px"
+              />
+            </div>
+
+            <div class="destination destination-trend-indonesia">
+              <img src="Assets/Images/Indonesia.webp" alt="" height="300px" />
+            </div>
+
+            <div class="destination destination-trend-pakistan">
+              <img src="Assets/Images/Mexico.webp" alt="" height="300px" />
+            </div>
+          </div>
+        </section>
+
+        <section class="booking-packages">
+          <div class="packages-container">
+            <div class="booking-info">
+              <h2>Start planning your next adventure</h2>
+            </div>
+
+            <div class="deal book-skyscanner">
+              <i class="fa fa-plane deal-icon" style="font-size: 6rem"></i>
+              <h3>Skyscanner</h3>
+              <p>Browse flights on Skyscanner to find deals.</p>
+              <button class="secondary-btn">Go to skyscanner</button>
+            </div>
+
+            <div class="deal safety-wing-pkg">
+              <i
+                class="fa fa-user-secret deal-icon"
+                style="font-size: 6rem"
+              ></i>
+              <h3>SafetyWing</h3>
+              <p>Book your travel insurance for as little as $45.08/4 weeks.</p>
+              <button class="secondary-btn">Go to safetywing</button>
+            </div>
+
+            <div class="deal Booking com-pkg">
+              <i class="fa fa-bed deal-icon" style="font-size: 6rem"></i>
+              <h3>Booking.com</h3>
+              <p>Find accommodation anywhere in the world.</p>
+              <button class="secondary-btn">Go to booking.com</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="travel-deals-container">
+          <div class="travel-deals">
+            <h2>Travel Deals</h2>
+            <p>
+              Looking for the current travel deals? Good news – we keep track of
+              the latest travel deals including coupon codes and crazy offers in
+              the travel industry.
+            </p>
+            <button class="secondary-btn travel-deals-btn">
+              Browse the deals
+            </button>
+          </div>
+        </section>
+      </div>
+
+      <div class="blogposts-container">
+        <div class="blogsopt-news">
+          <h2>Travel News 📢</h2>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/Japan-Rail-Pass-400x250.webp" alt="" />
+          <h3>Japan Rail Pass Set To Increase By Up To 77%</h3>
+
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/Airalo-promo-code-1-400x250.webp" alt="" />
+          <h3>Airalo Promo Code</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Colombia-digital-nomad-visa-400x250.webp"
+            alt=""
+          />
+          <h3>New Digital Nomad Visa Rolled Out In Colombia</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blog-btn-container">
+          <button class="secondary-btn">All News</button>
+        </div>
+
+        <div class="blogsopt-news">
+          <h2>Latest Blog Posts</h2>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/California.webp" alt="" />
+          <h3>4 Exciting Things To Do While Visiting Riverside, California</h3>
+
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/Levadas-madeira-400x250.webp" alt="" />
+          <h3>
+            Ultimate Guide For Walking The Levada Trails Of Madeira In 8 Days
+          </h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/travelers-at-the-mountain-400x250.webp"
+            alt=""
+          />
+          <h3>Holiday Alternatives To A Beach Break</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Woman-on-her-phone-during-her-travels-400x250.webp"
+            alt=""
+          />
+          <h3>Yesim Review: Is Yesim ESIM Good?</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/Douro-Valley-Portugal-400x250.webp" alt="" />
+          <h3>
+            Wine And Dine: Vineyard Visits And Gastronomic Experiences Between
+            Lisbon And Madrid
+          </h3>
+          <button class="card-button">Read Now</button>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img src="Assets/Images/Traveler-at-the-aiport-400x250.webp" alt="" />
+          <h3>
+            The Digital Nomad’s Guide To Working And Winning From Anywhere
+          </h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blog-btn-container">
+          <button class="secondary-btn">All Blog posts</button>
+        </div>
+
+        <div class="blogsopt-news">
+          <h2>MOST POPULAR BLOG POSTS</h2>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/Azerbaijan-SIM-cards-400x250.webp"
+            alt=""
+          />
+          <h3>Azerbaijan SIM Card: Everything You Need To Know</h3>
+
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/Cusco-Bolivia-400x250.webp"
+            alt=""
+          />
+          <h3>Bolivia SIM Cards: Everything You Need To Know</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/Buenos-Aires-Argentina-400x250.webp"
+            alt=""
+          />
+          <h3>Argentina SIM Cards: Everything You Need To Know</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/Traveling-by-train-2-400x250.jpg"
+            alt=""
+          />
+          <h3>Advantages And Disadvantages Of Traveling By Train</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/mountain-instagram-captions-400x250.jpg"
+            alt=""
+          />
+          <h3>100 Short Mountain Captions For Instagram</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Popular_Blogspots/Singapore-Airport-400x250.webp"
+            alt=""
+          />
+          <h3>Complete Guide: Where To Sleep In Changi Airport</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+
+        <div class="blogsopt-news">
+          <h2>living abroad</h2>
+        </div>
+
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Living_abroad/Bangkok-Street-400x250.webp"
+            alt=""
+          />
+          <h3>
+            Thai Motorbike License: My Experience At Honda Safety Riding Park
+          </h3>
+
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Living_abroad/Bangkok-Bank-400x250.webp"
+            alt=""
+          />
+          <h3>Complete Guide: Opening A Bank Account In Thailand</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="blogspot-card japan">
+          <img
+            src="Assets/Images/Living_abroad/Chiang-Mai-Tha-Phae-Gate-400x250.webp"
+            alt=""
+          />
+          <h3>How To Get The Residence Certificate In Chiang Mai</h3>
+          <button class="card-button">Read Now</button>
+        </div>
+        <div class="older-enteries-link-container">
+          <a href="#">&lt;&lt; Older Enteries</a>
+        </div>
+        <div class="blog-btn-container">
+          <button class="secondary-btn">See more</button>
+        </div>
+      </div>
+
+      <section class="tips-container">
+        <div class="tips-card full-length">
+          <h2>Useful Tips For Travelers</h2>
+        </div>
+        <div class="tip-card">
+          <h3>eSIM For Travelers</h3>
+          <a href="#" class="tip-link">Airalo review</a>
+          <a href="#" class="tip-link">Holafly review</a>
+          <a href="#" class="tip-link">Best eSIM for international travel</a>
+          <a href="#" class="tip-link">Europe SIM card</a>
+        </div>
+        <div class="tip-card">
+          <h3>Volunteering Abroad</h3>
+          <a href="#" class="tip-link">Worldpackers vs Workaway</a>
+          <a href="#" class="tip-link">Hostel work exchange</a>
+          <a href="#" class="tip-link"
+            >Free accommodation in exchange for work</a
+          >
+          <a href="#" class="tip-link">Worldpackers review</a>
+        </div>
+        <div class="tip-card">
+          <h3>eSIM For Travelers</h3>
+          <a href="#" class="tip-link">Banking Options For Travelers</a>
+          <a href="#" class="tip-link">Revolut travel card</a>
+          <a href="#" class="tip-link">Wise vs Revolut</a>
+          <a href="#" class="tip-link">Best international bank for expats</a>
+        </div>
+        <div class="tip-card no-padding">
+          <i class="fa fa-laptop icons"></i>
+          <h3>Digital Nomad</h3>
+          <p class="tip-card-text">
+            Learn
+            <a href="#" class="tip-link-inline"
+              >how to become a digital nomad</a
+            >
+            or <a href="#" class="tip-link-inline">go to Nomad Life 101.</a>
+          </p>
+        </div>
+        <div class="tip-card no-padding">
+          <i class="fa fa-warning icons"></i>
+          <h3>Travelan</h3>
+          <p>
+            Love trying new foods while traveling? Learn how to enjoy all the
+            food and adventure on your travels, while maintaining digestive
+            health with Travelan, an essential travel item. Find out more
+            <a href="#" class="tip-link-inline">here.</a>
+          </p>
+        </div>
+        <div class="tip-card no-padding">
+          <i class="fa fa-car icons"></i>
+          <h3>DiscoverCars.com</h3>
+          <p>Compare car rentals around the world on .</p>
+        </div>
+      </section>
+
+      <section class="all-brands-container">
+      <div class="other-brands-container">
+        <div class="other-brands-title">
+          <h2>Other Travel Brands</h2>
+        </div>
+        <div class="brand">
+          <img src="Assets/Images/Brands_supporting/esim_roamers.webp" alt="" />
+        </div>
+        <div class="brand">
+          <img
+            src="Assets/Images/Brands_supporting/Nomad-life-101-logo.webp"
+            alt=""
+          />
+        </div>
+        <div class="brand">
+          <img
+            src="Assets/Images/Brands_supporting/MTL-travel-blog-logo-2.webp"
+            alt=""
+          />
+        </div>
+        <div class="brand">
+          <img
+            src="Assets/Images/Brands_supporting/prompts-first-3.webp"
+            alt=""
+          />
+        </div>
+        <div class="brand">
+          <img
+            src="Assets/Images/Brands_supporting/logo-simpackers.webp"
+            alt=""
+          />
+        </div>
+      </section>
+      </div>
+    </main>
+
+    <footer class="footer-container">
+      <div class="footer-grid-container">
+        <div class="footer-about">
+          <h3>
+            About
+          </h3>
+          <ul class="footer-list">
+            <li class="footer-items">About Melissa</li>
+            <li class="footer-items">Contact</li>
+            <li class="footer-items">Jobs</li>
+            <li class="footer-items">Press</li>
+            <li class="footer-items">Privacy Policy</li>
+            <li class="footer-items">Work with us</li>
+          </ul>
+        </div>
+        <div class="footer-travel-tips">
+          <h3>
+            Travel Tips
+          </h3>
+          <ul class="footer-list">
+            <li class="footer-items">Destinations</li>
+            <li class="footer-items">Travel Blog</li>
+            <li class="footer-items">Travel Grossary</li>
+            <li class="footer-items">Travel SIM Cards</li>
+            <li class="footer-items">SIMPACKERS</li>
+          </ul>
+        </div>
+        <div class="footer-book-trip">
+          <h3>
+            About
+          </h3>
+          <ul class="footer-list">
+            <li class="footer-items">Book accomodation on Booking.com</li>
+            <li class="footer-items">Best travel websites</li>
+            <li class="footer-items">Book travel insurance with SafetyWing</li>
+          </ul>
+        </div>
+
+        <div class="footer-socialmedia-buttons-container">
+          <h3 class="full-length">Follow Us</h3>
+          <div class="social-button">
+            <i class="fa fa-facebook-square social-button"></i>
+          </div>
+          <div class="social-button">
+            <i class="fa fa-instagram social-button"></i>
+          </div>
+          <div class="social-button">
+            <i class="fa fa-youtube social-icons"></i>
+          </div>
+          <div class="social-button">
+            <i class="fa fa-pinterest-square social-icon"></i>
+          </div>
+        </div>
+
+        <div class="footer-desclaimer">
+          <p><b>Disclaimer:</b> This website may contain affiliate links. This basically means that I will earn a commission if you do make a purchase at no additional cost to you. All opinions are my own. Oh. And happy travels! Kindly note that we are a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com and its partners. Amazon and the Amazon logo are trademarks of Amazon.com, Inc. or its affiliates.</p>
+          <p><b>Designed by Melissa Giroux | Copyright © 2025 A Broken Backpack</b></p>
+          
+        </div>
+
+      </div>
+
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

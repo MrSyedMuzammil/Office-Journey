@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// // This is used to wait for the html to load successfully
+			// window.onload = function () {
+			// We Write all the javascript code here...
+			//   alert("The page has loaded successfully.");
+			// }
+
+			// The following is used for the cancellation or trying to reload the page
+
+			// window.onbeforeunload = function () {
+			//   console.log("Are you sure you are leaving the page ?");
+			//   return "Are you sure you want to leave this page?";
+
+			const num = 123;
+			if (num === 123) {
+				var partner = "Hello, Partner!";
+			}
+			console.log(partner);
+
+			function justPrint() {
+				console.log(`Hello, Dear ${partner}`);
+        var checkClosure = "Hello"; // It can not be printed outside of this
+			}
+
+			justPrint();
+			console.log(checkClosure);
+
+      //Delaying the function i.e sometimes we use this as we need some action to happen after sometime
+
+      console.log("After this the next output comes after five seconds")
+		</script>
+	</body>
+</html>

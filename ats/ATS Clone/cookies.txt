@@ -1,0 +1,6 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+atsengg.com	TRUE	/	FALSE	1999999999	PHPSESSID	cf0f0e081024ef1a60e3b20499b65495
+atsengg.com	TRUE	/	FALSE	1999999999	smpush_auto_channel_landing	4442
+atsengg.com	TRUE	/	FALSE	1999999999	wordpress_test_cookie	WP%20Cookie%20check
+

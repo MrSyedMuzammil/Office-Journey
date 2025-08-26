@@ -1,0 +1,13 @@
+.container {
+	display: grid;
+	background-color: #f0f0f0; /* Background color to show grid container */
+	padding: 20px;
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+}
+
+.item {
+	background-color: #a0c4ff; /* Item background to show items */
+	padding: 20px;
+	text-align: center;
+}

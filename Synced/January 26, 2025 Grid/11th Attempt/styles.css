@@ -1,0 +1,20 @@
+/* Styles for responsive repeat with auto-fit */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(200px, 1fr)
+  ); /* Responsive columns */
+  gap: 15px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.item {
+  background: #2ecc71;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}

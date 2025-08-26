@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+header {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 4rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+#logo {
+  font-size: 50px;
+  font-family: "Oleo Script", sans-serif;
+  text-transform: uppercase;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.5);
+  color: yellow;
+  text-shadow: 2px 4px 8px rgba(0, 0, 0, 1);
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+header ul {
+  list-style: none;
+}
+
+nav > ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: #333;
+  background-color: yellow;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: rgb(255, 233, 88);
+  transform: translateY(-2px);
+}
+
+/* The Footer Design */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 4rem;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer img {
+  width: 30px;
+  height: 30px;
+  transition: transform 0.3s;
+}

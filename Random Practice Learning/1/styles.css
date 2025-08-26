@@ -1,0 +1,13 @@
+.grid-container {
+	grid-template-columns: 309px 304px;
+	gap: 20px; /* Columns adjust to content width */
+}
+
+.item {
+	padding: 20px;
+	text-align: center;
+	font-size: 30px;
+	background-color: rgba(233, 15, 15, 0.8);
+	border-radius: 5px;
+	cursor: pointer;
+}

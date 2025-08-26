@@ -1,0 +1,26 @@
+/* Styles for auto-sized grid (navigation bar) */
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Logo (left) + Links (right) */
+  justify-content: space-between; /* Pushes logo and links to edges */
+  align-items: center;
+  padding: 15px 30px;
+  background: #2d3436;
+}
+
+.logo {
+  color: white;
+  font-family: "Arial Black", sans-serif;
+  font-size: 24px;
+}
+
+.links {
+  display: flex;
+  gap: 20px; /* Spacing between links */
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+}

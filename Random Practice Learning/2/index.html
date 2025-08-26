@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>DropDown</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<h1>Drop Down Practice</h1>
+		<p>Please Select a paying method</p>
+		<label for="payment">Payment Method</label>
+		<select name="payment" id="payment">
+			<optgroup label="Banks">
+				<option value="Alfala">Alfala</option>
+				<option value="Allied">Allied</option>
+				<option value="HBL">HBL</option>
+				<option value="Meezan">Meezan</option>
+			</optgroup>
+
+			<optgroup label="Online Wallets">
+				<option value="Paypal" selected>Paypal</option>
+				<option value="Pioneer">Pioneer</option>
+				<option value="Crypto">Crypto</option>
+			</optgroup>
+		</select>
+
+		<script src="script.js"></script>
+	</body>
+</html>

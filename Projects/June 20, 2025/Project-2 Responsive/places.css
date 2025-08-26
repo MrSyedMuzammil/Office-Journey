@@ -1,0 +1,142 @@
+header {
+  position: static;
+  background-color: #2d2d2d;
+}
+
+main {
+  background-color: #312f2f;
+}
+
+#logo {
+  color: aqua;
+}
+
+nav a {
+  background-color: aqua;
+}
+
+nav a:hover {
+  background-color: #00d5ff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: #2d2d2d;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto; */
+  gap: 2rem;
+}
+
+main .card__image img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  translateY(-5px);
+  box-shadow: 0 0 16px rgb(196, 192, 192);
+  
+}
+
+.card__contents {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card__contents a {
+  text-decoration: none;
+  margin-left: auto;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(0, 115, 255);
+  padding: 0.2rem;
+  border-radius: 4px;
+  background-color: rgba(0, 213, 255, 0.129);
+}
+
+.card__contents a:hover {
+  background-color: rgba(0, 213, 255, 0.244);
+}
+
+.card__contents h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0.5rem 0;
+}
+
+
+@media (max-width: 768px) {
+
+  header {
+      flex-direction: column;
+      align-items: center;
+      padding: 1.5rem;
+      gap: 1rem;
+    }
+
+  #logo {
+    font-size: 32px;
+  }
+
+
+  nav > ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  nav a {
+    width: 100%;
+    text-align: center;
+  }
+
+/* @media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .card__image img {
+    width: 100%;
+    height: auto;
+  }
+} */
+
+/* Design No 1 : Self Minimum 300px or grow more cards
+
+* For this just in .container uncomment or use :
+
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-rows: auto;
+  
+  */
+
+/* Design No 2 :
+
+Use the two fractions by default and use media query to change to 1fr while in tablet or mobile screen resolution. For this in .container use:
+ grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  
+NOTE: Here the image is at top and the card content is under
+*/

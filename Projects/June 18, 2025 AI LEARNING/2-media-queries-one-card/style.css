@@ -1,0 +1,154 @@
+/*
+  ========================================================================
+  1. SETUP & VARIABLES
+  World-class convention: Using CSS variables (custom properties) for colors
+  makes the design system reusable and easy to update.
+  ========================================================================
+*/
+:root {
+  --primary-color: #4f46e5; /* A vibrant indigo */
+  --primary-color-dark: #4338ca;
+  --text-dark: #111827;
+  --text-light: #f9fafb;
+  --text-secondary: #6b7280;
+  --background-color: #f3f4f6;
+  --card-background: #ffffff;
+  --accent-gradient: linear-gradient(45deg, #f59e0b, #ef4444);
+}
+
+/*
+  ========================================================================
+  2. MOBILE-FIRST STYLES (Default)
+  These styles apply to ALL screen sizes by default. We are designing
+  for the narrowest view first.
+  ========================================================================
+*/
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-dark);
+  margin: 0;
+  padding: 20px; /* Give some space on mobile */
+
+  /* Flexbox to center the card for this demo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.product-card {
+  background-color: var(--card-background);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  max-width: 380px; /* Prevents card from looking weird on mobile landscape */
+  overflow: hidden; /* Ensures the image corners are rounded */
+
+  /* BEST PRACTICE: A subtle transition makes the responsive change smoother */
+  transition: all 0.3s ease-in-out;
+}
+
+.product-image {
+  background-image: var(--accent-gradient);
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+}
+
+.product-info {
+  padding: 24px;
+  text-align: center; /* Center text on mobile */
+}
+
+.product-title {
+  margin: 0 0 12px 0;
+  font-size: 24px;
+}
+
+.product-description {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.product-price {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.current-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--text-secondary);
+}
+
+.cta-button {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  border-radius: 8px;
+  padding: 16px 24px;
+  font-size: 16px;
+  font-weight: 700;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--primary-color-dark);
+}
+
+/*
+  ========================================================================
+  3. MEDIA QUERY FOR LARGER SCREENS (Tablet and up)
+  This is the "Progressive Enhancement".
+  We use min-width. These styles ONLY apply if the viewport is 768px or WIDER.
+  ========================================================================
+*/
+@media screen and (min-width: 768px) {
+  /*
+      The breakpoint of 768px was chosen because that's a common point
+      where a single-column layout has enough space to become two columns.
+      It's content-driven, not device-driven.
+    */
+
+  .product-card {
+    /* On desktop, the card is wider and uses Flexbox for a side-by-side layout */
+    display: flex;
+    max-width: 800px;
+    text-align: left; /* Align text to the left on desktop */
+  }
+
+  .product-image {
+    /* The image now takes up 45% of the card's width */
+    width: 45%;
+    height: auto; /* Height is no longer fixed, it will adjust to content */
+  }
+
+  .product-info {
+    /* The text info takes up the remaining space */
+    width: 55%;
+    /* Use flex to better control vertical alignment */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .product-price {
+    justify-content: flex-start; /* Align price to the left */
+  }
+
+  .cta-button::after {
+    /* A fun little detail for desktop users */
+    content: " →";
+  }
+}

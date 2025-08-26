@@ -1,0 +1,14 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.navigation-bar ul li a {
+	/* display: block; */
+	display: flex;
+	flex-direction: column;
+	color: #333;
+	text-decoration: none;
+	padding: 14px 16px;
+}

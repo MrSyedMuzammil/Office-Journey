@@ -1,0 +1,25 @@
+/* Styles for flexible grid with fr units */
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr; /* Main area (2/3) + Sidebar (1/3) */
+  gap: 20px;
+  height: 400px;
+  padding: 20px;
+  background: #e9ecef;
+}
+
+.item {
+  padding: 25px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  background: #4ecdc4; /* Teal for main content */
+  color: white;
+}
+
+aside {
+  background: #ffe66d; /* Yellow for sidebar */
+  color: #333;
+}

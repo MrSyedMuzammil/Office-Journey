@@ -1,0 +1,46 @@
+.grid-container {
+  display: grid;
+  grid-template-rows: 80px 1fr 50px;
+  border-radius: 10px;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: rgb(123, 10, 155);
+}
+
+.header nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.header h1 {
+  color: white;
+  padding: 10px;
+}
+
+.main {
+  background-color: rgb(139, 29, 154);
+  text-align: center;
+  place-content: center;
+}
+
+.main a {
+  width: 40px;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+.footer {
+  color: white;
+  background-color: rgb(16, 8, 25);
+  text-align: center;
+  place-content: center;
+}

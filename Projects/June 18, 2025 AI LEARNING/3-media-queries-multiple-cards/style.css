@@ -1,0 +1,116 @@
+/*
+  ========================================================================
+  1. SETUP & DARK NEON THEME
+  Using CSS Variables for our neon theme. The rgba variables are for the
+  "glow" effect using box-shadow. This is a great trick for neon styles.
+  ========================================================================
+*/
+:root {
+  --bg-dark: #0d1117;
+  --card-dark: #161b22;
+  --text-light: #e6edf3;
+  --text-secondary: #7d8590;
+  --neon-cyan: #22d3ee;
+  --neon-magenta: #ec4899;
+  --neon-cyan-glow: rgba(34, 211, 238, 0.3);
+  --neon-magenta-glow: rgba(236, 72, 153, 0.3);
+}
+
+/*
+  ========================================================================
+  2. MOBILE-FIRST STYLES (Default Vertical Layout)
+  This is our base. Everything is designed to be in a single, clean column.
+  ========================================================================
+*/
+body {
+  font-family: "Orbitron", sans-serif;
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  margin: 0;
+  padding: 24px;
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-header h1 {
+  color: var(--neon-cyan);
+  text-shadow: 0 0 8px var(--neon-cyan-glow);
+  margin: 0;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column; /* Stack cards vertically on mobile */
+  gap: 24px; /* Creates space between the cards */
+  width: 100%;
+}
+
+.neo-card {
+  background-color: var(--card-dark);
+  border: 1px solid var(--neon-cyan);
+  border-radius: 12px;
+  padding: 24px;
+  text-align: center;
+
+  /* THE GLOW EFFECT: A layered shadow creates a soft, realistic neon glow. */
+  box-shadow: 0 0 15px var(--neon-cyan-glow);
+
+  /* BEST PRACTICE: Smooth transitions make layout changes feel polished. */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.neo-card:hover {
+  /* Make the cards feel interactive */
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px var(--neon-cyan-glow);
+}
+
+.neo-card h2 {
+  color: var(--neon-magenta);
+  margin: 0 0 8px 0;
+  text-shadow: 0 0 8px var(--neon-magenta-glow);
+}
+
+.neo-card p {
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+/*
+  ========================================================================
+  3. MEDIA QUERY FOR LARGER SCREENS (Breakpoint at 600px)
+  Here, we switch to a horizontal, wrapping layout.
+  ========================================================================
+*/
+@media screen and (min-width: 600px) {
+  .card-container {
+    /* On wider screens, change direction to a row */
+    flex-direction: row;
+
+    /*
+          CRUCIAL PROPERTY: flex-wrap allows items to wrap to the next line
+          when they run out of horizontal space. This is the key to creating
+          a flexible grid that adapts to any screen width.
+        */
+    flex-wrap: wrap;
+
+    /* Center the cards within the container */
+    justify-content: center;
+  }
+
+  .neo-card {
+    /*
+          PROFESSIONAL TECHNIQUE: The 'flex' shorthand (grow, shrink, basis).
+          This tells each card:
+          1. flex-grow: 1 (Can I grow to fill empty space? Yes)
+          2. flex-shrink: 1 (Can I shrink if space is tight? Yes)
+          3. flex-basis: 280px (What's my ideal starting width? 280px)
+          This is far more flexible than setting a fixed `width`.
+        */
+    flex: 1 1 280px;
+    max-width: 320px; /* Prevents cards from growing too large on ultrawide screens */
+  }
+}

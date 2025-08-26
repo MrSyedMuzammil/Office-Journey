@@ -1,0 +1,17 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Create HTML, CSS, JS files",
+      "type": "shell",
+      "command": "New-Item -ItemType File -Name index.html; New-Item -ItemType File -Name styles.css; New-Item -ItemType File -Name script.js",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ]
+}

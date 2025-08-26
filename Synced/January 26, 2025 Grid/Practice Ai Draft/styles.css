@@ -1,0 +1,49 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: 150px 2fr auto; /* Fixed + Flexible + Auto */
+  gap: 25px;
+  padding: 20px;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.sidebar {
+  background: #34495e;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  color: white;
+  font-size: 1.2em;
+}
+
+.sidebar a {
+  display: block;
+  color: #bdc3c7;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.content {
+  background: #f8f9fa;
+  padding: 30px;
+}
+
+.content h1 {
+  color: #2c3e50;
+  font-size: 2em;
+}
+
+.author {
+  color: #7f8c8d;
+  font-style: italic;
+}
+
+.subscribe button {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}

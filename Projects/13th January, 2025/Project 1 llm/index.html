@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home Page</title>
+		<!-- Link to the external CSS file -->
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<header>
+			<nav>
+				<div class="logo-image">
+					<img src="assets/logo.png" alt="The logo" />
+				</div>
+
+				<!-- Main navigation list -->
+				<ul class="navbar">
+					<!-- Basic links -->
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+
+					<!-- Services dropdown -->
+					<li class="nav-dropdown">
+						<a href="#services" class="dropdown-btn">Services</a>
+						<ul class="dropdown-content">
+							<li><a href="#service1">Create Website</a></li>
+							<li><a href="#service2">Host Website</a></li>
+							<li><a href="#service3">SEO of Website</a></li>
+						</ul>
+					</li>
+
+					<!-- "Buy Now" button -->
+					<li class="buy-btn">
+						<!-- Use JavaScript navigation OR an anchor tag -->
+						<button type="button" onclick="window.location.href='#buy-product'">
+							Buy Now
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+	</body>
+</html>

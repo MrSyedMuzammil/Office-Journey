@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div id="idOne" onclick="newTextInId() , newColor()">
+				This is an Id Selector Div
+			</div>
+
+			<div class="classOne">This is a Class Selector Div</div>
+
+			<div class="headingClass">
+				<h1>This will be selected throug the heading element itself</h1>
+			</div>
+
+			<div class="classHavingId">
+				<div id="IdInsideClass">
+					This is a Div inside another Div with a class and id
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html>
+	<body>
+		<div id="content">Original Content</div>
+		<button onclick="changeContent()">Change Content</button>
+
+		<script>
+			function changeContent() {
+				let element = document.querySelector("#content");
+				element.innerHTML = "<h1>New Content</h1>";
+			}
+		</script>
+	</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html>
+<body>
+  <div id="content">Original Content</div>
+  <button onclick="changeText()">Change Text</button>
+
+  <script>
+    let isOriginal = true;
+
+    function changeText() {
+      let element = document.querySelector("#content");
+      if (isOriginal) {
+        element.innerText = "New Text Content";
+      } else {
+        element.innerText = "Original Content";
+      }
+      isOriginal = !isOriginal; // Toggle the value
+    }
+  </script>
+</body>
+</html> -->

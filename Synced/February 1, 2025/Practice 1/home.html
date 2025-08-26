@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Client's Dashboard</title>
+		<link rel="stylesheet" href="styles.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/icon?family=Material+Icons"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+		<link rel="stylesheet" href="documents.html" />
+	</head>
+	<body>
+		<div id="title-row">
+			<div class="title-text">
+				<p>Client Dashboard</p>
+			</div>
+
+			<div class="profile">
+				<img src="Assets/Images/profile.jpg" alt="Profile Pic" />
+				<span>Hi, there!</span>
+			</div>
+		</div>
+		<header>
+			<nav class="nav-buttons">
+				<div class="overview-btn">
+					<i class="fa fa-user-o"></i>
+					<a href="home.html">Overview</a>
+				</div>
+				<div class="project-btn">
+					<i class="fa fa-heart-o"></i>
+					<span>Projects</span>
+				</div>
+				<div class="documents-btn">
+					<i class="fa fa-file-o"></i>
+					<a href="documents.html">Documents</a>
+				</div>
+				<div class="progress-btn">
+					<i class="fa fa-flag-o"></i>
+					<span>Progress</span>
+				</div>
+				<div class="assets-btn">
+					<i class="material-icons">perm_media</i>
+					<span>Assets</span>
+				</div>
+			</nav>
+		</header>
+
+		<main>
+			<div class="hero-cont">
+				<div class="hero-heading">
+					<h2>Welcome back, SyedMrKing!</h2>
+				</div>
+
+				<div class="data-dashboard">
+					<div class="cards" id="starting-budget">
+						<div class="icon-container green">
+							<i class="fa fa-credit-card"></i>
+						</div>
+						<h3 class="cards-heading">$25000</h3>
+						<div class="cards-paragraph">Starting budget</div>
+					</div>
+					<div class="cards" id="total-spent">
+						<div class="icon-container green">
+							<i class="fa fa-arrow-circle-o-up"></i>
+						</div>
+						<h3 class="cards-heading">$5,030</h3>
+						<div class="cards-paragraph">Total spend</div>
+					</div>
+					<div class="cards" id="target-launch">
+						<div class="icon-container violet">
+							<i class="fa fa-calendar-check-o"></i>
+						</div>
+						<h3 class="cards-heading">21 June 2019</h3>
+
+						<div class="cards-paragraph">Target launch</div>
+					</div>
+					<div class="cards" id="main-graph">
+						<div class="graph-image">
+							<img src="Assets/Images/dashboard-graph.png" alt="" />
+						</div>
+					</div>
+					<div class="cards" id="pi-chart">
+						<div class="pi-chart-image">
+							<img src="Assets/Images/pi-chart.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>

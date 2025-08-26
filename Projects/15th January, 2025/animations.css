@@ -1,0 +1,17 @@
+@keyframes button-text {
+    0% {
+        color: #000 ;
+    }
+
+    30% {
+        color: #571414;
+    }
+
+    60% {
+        color: #b82121;
+    }
+
+    90% {
+        color: #ff2020;
+    }
+}

@@ -1,0 +1,16 @@
+.grid-container {
+  display: grid; /* Turns this container into a grid */
+  /* grid-template-columns: 1fr 1fr; */
+  /* grid-template-columns: 200px 1fr auto; */
+  /* grid-template-rows: 300px 200px; */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 10px; /* Adds spacing between grid items */
+  padding: 10px;
+  background: #f95454;
+}
+
+.item {
+  background: skyblue;
+  padding: 20px;
+  text-align: center;
+}

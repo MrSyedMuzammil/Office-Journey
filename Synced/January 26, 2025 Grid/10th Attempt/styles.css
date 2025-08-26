@@ -1,0 +1,24 @@
+/* Styles for implicit rows */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 equal columns */
+  grid-auto-rows: 300px; /* All implicit rows are 100px tall */
+  gap: 15px;
+  padding: 20px;
+  background: #f5f5f5;
+}
+
+.item {
+  background: #e67e22;
+  padding: 20px;
+  text-align: right;
+  color: white;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+}
+
+.trial-pic {
+  width: 300px;
+  float: left;
+  margin-top: -200px;
+}

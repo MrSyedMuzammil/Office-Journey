@@ -1,0 +1,89 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-dark: #0d1117;
+  --card-dark: #161b22;
+  --text-light: #e6edf3;
+  --text-secondary: #bbad8b;
+  --neon-green: #26ff04;
+  --neon-orange: #f56200;
+  --neon-green-glow: rgba(20, 237, 59, 0.333);
+  --neon-orange-glow: rgba(235, 94, 0, 0.452);
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  text-align: center;
+  font-family: "Savate", sans-serif;
+
+  /* centering elements */
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  gap: 2rem;
+}
+
+.header__title,
+.header__assistant {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: var(--neon-green);
+  text-shadow: 0 0 10px var(--neon-green);
+}
+
+.header__assistant,
+.card__title {
+  font-size: 1.8rem;
+  color: var(--neon-orange);
+  text-shadow: 0 0 10px var(--neon-orange);
+  margin-bottom: 1rem;
+}
+
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card {
+  padding: 1rem;
+  border: 1px solid red;
+  border-radius: 8px;
+  background-color: var(--card-dark);
+  min-width: 384px;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 10px var(--neon-green-glow), 0 0 20px var(--neon-orange-glow);
+  transform: translateY(-5px);
+}
+
+/* Now applying the media queries to make it better for the bigger screens too. */
+
+@media screen and (min-width: 768px) {
+  .cards__container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .card {
+    flex: 1 1 300px;
+  }
+
+  .header__title,
+  .header__assistant {
+    font-size: 3rem;
+  }
+}

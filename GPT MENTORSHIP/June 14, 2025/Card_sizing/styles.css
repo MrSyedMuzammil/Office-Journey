@@ -1,0 +1,89 @@
+/* It's good practice to define your variables in the :root pseudo-class */
+:root {
+  --dark-color: #333;
+  --background-color: #ffffff;
+}
+
+body {
+  /* It's helpful to reset default margin/padding */
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.blogposts-container {
+  background-color: #f1f2f6;
+  /* Using min-height is often more flexible than height */
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* Use padding for spacing inside the container */
+  padding: 3rem 10rem;
+  gap: 2rem;
+  /* This ensures items in a grid row start at the same vertical point */
+  align-content: start;
+}
+
+.blogspot-card {
+  color: var(--dark-color);
+  background-color: var(--background-color);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  overflow: hidden; /* Ensures child elements respect the border-radius */
+
+  /* --- KEY CHANGES START HERE --- */
+
+  display: flex;
+  flex-direction: column;
+
+  /*
+      By removing 'justify-content: center', the items default to starting from the top.
+      This immediately fixes the whitespace issue at the top of the card.
+    */
+
+  gap: 1.5rem; /* Adjusted gap slightly for better spacing */
+}
+
+.blogspot-card img {
+  /* We don't need margin-top: 0 anymore because the parent flex container handles alignment */
+  width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Removes any extra space below the image */
+}
+
+.blogspot-card h3 {
+  /* Padding on just the text elements keeps the image flush with the card edges */
+  padding: 0 2rem;
+  font-size: 1.5rem;
+  /* We need to make sure the h3 doesn't have default browser margins affecting our layout */
+  margin: 0;
+}
+
+.blogspot-card .secondary-btn {
+  /* --- THE PRO TECHNIQUE --- */
+  /*
+      'margin-top: auto;' is the magic here.
+      In a flex column, an auto margin will consume all available free space
+      in the direction it's applied. This pushes the button to the very bottom
+      of the card, regardless of the card's height or the content above it.
+    */
+  margin-top: auto;
+  margin-left: 2rem; /* Aligns with the h3 padding */
+  margin-right: 2rem; /* Aligns with the h3 padding */
+  margin-bottom: 2rem; /* Adds some space at the bottom */
+
+  /* Dummy styles for the button for a complete look */
+  padding: 1rem 1.5rem;
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.blogsopt-news {
+  grid-column: 1 / -1; /* This correctly spans all columns */
+  text-align: center;
+  /* Removed margin-top to let the container's padding handle the spacing */
+}

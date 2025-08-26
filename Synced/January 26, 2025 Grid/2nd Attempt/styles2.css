@@ -1,0 +1,14 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Columns adjust to content width */
+  gap: 10px;
+}
+
+.item {
+  background-color: hsl(76, 87%, 48%);
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
