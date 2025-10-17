@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Code Drama - We Build Digital Excellence</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="container nav-container">
+        <a href="#home" class="logo"
+          >Code Drama<span class="accent-color">.</span></a
+        >
+        <div class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#portfolio">Our Work</a>
+          <a href="#learn">Learn</a>
+          <a href="#tech-stack">Tech</a>
+          <a href="#open-source">Open Source</a>
+          <a href="#team">Our Team</a>
+          <a href="#contact" class="btn btn-primary">Contact Us</a>
+        </div>
+        <button id="mobile-menu-button" class="mobile-menu-toggle">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </nav>
+      <div id="mobile-menu" class="mobile-nav-links hidden">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Our Work</a>
+        <a href="#learn">Learn</a>
+        <a href="#tech-stack">Tech</a>
+        <a href="#open-source">Open Source</a>
+        <a href="#team">Our Team</a>
+        <a href="#contact" class="btn btn-primary">Contact Us</a>
+      </div>
+    </header>
+
+    <main class="container">
+      <section id="home" class="hero-section">
+        <div class="animated-bg"></div>
+        <div class="hero-content">
+          <h1 class="hero-title" data-wow>
+            We Build <span id="typed-text" class="accent-color"></span>
+          </h1>
+          <p class="hero-subtitle" data-wow>
+            A creative agency dedicated to building high-quality, scalable, and
+            beautiful digital experiences.
+          </p>
+          <div class="hero-buttons" data-wow>
+            <a href="#portfolio" class="btn btn-primary btn-large"
+              >View Our Work</a
+            >
+            <a href="#contact" class="btn btn-secondary btn-large"
+              >Get a Quote</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">What We Offer</h2>
+          <p class="section-subtitle">
+            Crafting digital solutions from the ground up.
+          </p>
+        </div>
+        <div class="services-grid"></div>
+      </section>
+
+      <section id="portfolio" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Our Work</h2>
+          <p class="section-subtitle">
+            A selection of our professional projects.
+          </p>
+        </div>
+        <div id="portfolio-filters" class="portfolio-filters" data-wow>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Apps</button>
+          <button class="filter-btn" data-filter="uiux">UI/UX</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+        </div>
+        <div id="portfolio-grid" class="portfolio-grid"></div>
+      </section>
+
+      <section id="learn" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Learn Interactively</h2>
+          <p class="section-subtitle">
+            Engage with our hands-on learning tools and concepts.
+          </p>
+        </div>
+        <div id="learning-grid" class="learning-grid"></div>
+      </section>
+
+      <section id="tech-stack" class="content-section tech-stack-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Our Technology Stack</h2>
+          <p class="section-subtitle">
+            The tools we use to build powerful applications.
+          </p>
+        </div>
+        <div class="scroller-container" data-wow>
+          <div class="scroller-inner">
+            <div id="tech-scroller" class="scroller"></div>
+            <div
+              id="tech-scroller-clone"
+              class="scroller"
+              aria-hidden="true"
+            ></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="open-source" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Our Open Source Contributions</h2>
+          <p class="section-subtitle">
+            We believe in building and sharing with the community.
+          </p>
+        </div>
+        <div id="repo-list" class="repo-list"></div>
+      </section>
+
+      <section id="team" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Meet Our Team</h2>
+          <p class="section-subtitle">The creative minds behind our success.</p>
+        </div>
+        <div id="team-grid" class="team-grid"></div>
+      </section>
+
+      <section id="contact" class="content-section">
+        <div class="section-header" data-wow>
+          <h2 class="section-title">Let's Build Together</h2>
+          <p class="section-subtitle">
+            Have a project in mind? We'd love to hear about it.
+          </p>
+        </div>
+        <div class="contact-form-container" data-wow>
+          <form id="contact-form" class="contact-form">
+            <input
+              type="text"
+              id="name"
+              placeholder="Your Name"
+              required
+              class="form-input"
+            />
+            <input
+              type="email"
+              id="email"
+              placeholder="Your Email"
+              required
+              class="form-input"
+            />
+            <textarea
+              id="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+              class="form-textarea"
+            ></textarea>
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              Send Message
+            </button>
+          </form>
+          <div id="form-status" class="form-status"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer-bottom">
+      <div class="container">
+        <p>&copy; 2024 Code Drama. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top-btn hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <line x1="12" y1="19" x2="12" y2="5"></line>
+        <polyline points="5 12 12 5 19 12"></polyline>
+      </svg>
+    </button>
+
+    <div id="portfolio-modal" class="modal-overlay hidden">
+      <div id="modal-content" class="modal-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
