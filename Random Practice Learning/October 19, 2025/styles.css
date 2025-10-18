@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  height: 200px;
+  width: 300px;
+  position: relative;
+  background-color: white;
+  border: 10px solid red;
+  border-radius: 20px;
+}
+
+.main-circle {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: inherit;
+  background-color: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  z-index: 1;
+}
+
+.small-circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 10px solid red;
+  position: absolute;
+  background-color: yellow;
+  z-index: 1;
+}
+
+.circle1 {
+  top: 10px;
+  left: 120px;
+}
+
+.circle2 {
+  top: 120px;
+  left: 10px;
+}
