@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>vh vs dvh and svh</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>vh vs dvh and svh</h1>
+      <p>
+        The vh is not dynamic and will look for the screen size no matter
+        adressbar or navigation bar. It will have a scroll of the part that
+        covers the naviagation and adress bar. not dynamic
+      </p>
+
+      <p>
+        The dvh is dynamic and will adjust to the screen size even with the
+        adressbar and navigation bar. It will not have a scroll of the part that
+        covers the naviagation and adress bar. dynamic
+      </p>
+
+      <p>
+        the svh will cut the part of the address bar and the navigation bar.
+        When we scroll on mobile the address bar hides, but it will result in
+        less area covering as it is not dynamic.
+      </p>
+    </div>
+    <div class="tester">
+      <div class="vh-test">100vh</div>
+      <div class="dvh-test">100dvh</div>
+      <div class="svh-test">100svh</div>
+      <div class="tail">200px</div>
+    </div>
+  </body>
+</html>

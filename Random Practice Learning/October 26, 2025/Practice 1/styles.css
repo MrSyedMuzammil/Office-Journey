@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: lightcoral;
+}
+
+h1 {
+  text-align: center;
+  background-color: lightgreen;
+  padding: 12px;
+  font-size: 18px;
+  border-radius: 4px;
+}
+
+p {
+  background-color: antiquewhite;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  width: 50%;
+}
+
+.container {
+  height: 100vh;
+  background-color: coral;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.vh-test {
+  height: 100vh;
+  background-color: lightgreen;
+}
+
+.dvh-test {
+  height: 100dvh;
+  background-color: burlywood;
+}
+
+.svh-test {
+  height: 100svh;
+  background-color: lightseagreen;
+}
+
+.tail {
+  height: 200px;
+  background-color: lightpink;
+}
