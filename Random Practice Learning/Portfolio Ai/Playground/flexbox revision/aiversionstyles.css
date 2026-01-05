@@ -1,0 +1,62 @@
+/* Use the :root pseudo-class to declare global CSS variables.
+  This makes your color theme easy to manage from one place.
+*/
+:root {
+  --primary-bg-color: aquamarine;
+  --link-bg-color: rgb(19, 151, 151);
+  --button-bg-color: blueviolet;
+  --text-color-light: white;
+  --body-bg-color: antiquewhite;
+  --font-family-sans: Arial, Helvetica, sans-serif;
+}
+
+/* A simple reset for consistency across browsers. */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--body-bg-color);
+  font-family: var(--font-family-sans);
+}
+
+/* Block: .header */
+.header {
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  padding: 0 1rem;
+}
+
+/* Block: .nav */
+.nav__list {
+  display: flex;
+  align-items: center; /* This single property aligns all nav items vertically. */
+  gap: 1rem;
+  list-style: none;
+}
+
+/* Element: .nav__link */
+.nav__link {
+  display: block;
+  text-decoration: none;
+  color: var(--text-color-light);
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--link-bg-color);
+  /* Adding a transition for a smoother hover effect */
+  transition: transform 0.2s ease-in-out;
+}
+
+.nav__link:hover {
+  transform: translateY(-2px);
+}
+
+/* Modifier: .nav__link--button */
+.nav__link--button {
+  background-color: var(--button-bg-color);
+}
