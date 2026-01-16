@@ -1,0 +1,164 @@
+HTTrack3.49-2+htsswf+htsjava launched on Fri, 24 Jan 2025 14:10:33 at https://atsengg.com/ +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar
+(winhttrack -qwC2%Ps2u1%s%uN0%I0p3DaK0H0%kf2A25000%f#f -F "Mozilla/4.5 (compatible; HTTrack 3.0x; Windows 98)" -%F "<!-- Mirrored from %s%s by HTTrack Website Copier/3.x [XR&CO'2014], %s -->" -%l "en, *" https://atsengg.com/ -O1 "D:\Office\Clones\ats\ATS Clone" +*.png +*.gif +*.jpg +*.jpeg +*.css +*.js -ad.doubleclick.net/* -mime:application/foobar )
+
+Information, Warnings and Errors reported for this mirror:
+note:	the hts-log.txt file, and hts-cache folder, may contain sensitive information,
+	such as username/password authentication for websites mirrored in this project
+	do not share these files/folders if you want these information to remain private
+
+14:12:02	Warning: 	file not stored in cache due to bogus state (incomplete type with OK (200), size 0): https://atsengg.com/wp-content/uploads/essential-addons-elementor/eael-6532.js?ver=1736763614
+14:12:20	Error: 	"Method Not Allowed" (405) at link https://atsengg.com/xmlrpc.php (from https://atsengg.com/)
+14:12:20	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_120x120.png (from https://atsengg.com/)
+14:12:20	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_76x76.png (from https://atsengg.com/)
+14:12:20	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_152x152.png (from https://atsengg.com/)
+14:16:10	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/uploads/2021/10/Picture20.png (from https://atsengg.com/)
+14:16:10	Error: 	"Not Found" (404) at link https://atsengg.com/https:/atsengg.com/wp-content/uploads/2025/01/Ecofy-Logo-PNG.png (from https://atsengg.com/)
+14:16:10	Error: 	"Not Found" (404) at link https://atsengg.com/https:/atsengg.com/wp-content/uploads/2024/12/ind.png (from https://atsengg.com/)
+14:16:10	Error: 	"Not Found" (404) at link https://atsengg.com/https:/atsengg.com/wp-content/uploads/2024/12/ftk.png (from https://atsengg.com/)
+14:16:10	Error: 	"Not Found" (404) at link https://atsengg.com/https:/atsengg.com/wp-content/uploads/2024/12/stylo.png (from https://atsengg.com/)
+14:16:10	Error: 	"Not Found" (404) at link https://atsengg.com/https:/atsengg.com/wp-content/uploads/2024/12/go.png (from https://atsengg.com/)
+14:16:59	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/js/bootstrap.optimized.min.js?ver=5.0.1 (from https://atsengg.com/)
+14:16:59	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_120x120.png (from https://atsengg.com/)
+14:17:00	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_76x76.png (from https://atsengg.com/)
+14:17:00	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_152x152.png (from https://atsengg.com/)
+14:17:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/fontawesome/fa-regular-400.woff2 (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/fontawesome/fa-regular-400.ttf (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/fontawesome/fa-solid-900.ttf (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/images/owl.video.play.png (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:04	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/css/images/blank.gif (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:04	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/Simple-Line-Icons/Simple-Line-Icons.eot (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:05	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/Simple-Line-Icons/Simple-Line-Icons.woff (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:05	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/themes/porto/fonts/porto-font/porto.eot? (from https://atsengg.com/wp-content/themes/porto/css/plugins.css?ver=7.0.9)
+14:17:06	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-regular-400.eot? (from https://atsengg.com/wp-content/plugins/elementor/assets/lib/font-awesome/css/regular.min.css?ver=5.15.3)
+14:17:10	Warning: 	Moved Permanently for https://atsengg.com/?p=2408
+14:17:10	Warning: 	File has moved from https://atsengg.com/?p=2408 to https://atsengg.com/solar-solutions/
+14:17:10	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/uploads/2020/12/Untitled-7.jpg (from https://atsengg.com/solar-solutions/)
+14:17:12	Warning: 	Moved Permanently for https://atsengg.com/?p=2422
+14:17:12	Warning: 	File has moved from https://atsengg.com/?p=2422 to https://atsengg.com/fabrications/
+14:17:12	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatsengg.com%2Ffabrications%2F&format=xml (from https://atsengg.com/fabrications/)
+14:17:12	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/uploads/2020/12/F6.jpeg (from https://atsengg.com/fabrications/)
+14:17:12	Warning: 	Moved Permanently for https://atsengg.com/?p=8100
+14:17:12	Warning: 	File has moved from https://atsengg.com/?p=8100 to https://atsengg.com/lithium-batteries/
+14:17:12	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/uploads/2024/12/1-240930145GbM.png (from https://atsengg.com/lithium-batteries/)
+14:17:14	Warning: 	Moved Permanently for https://atsengg.com/?p=1057
+14:17:14	Warning: 	File has moved from https://atsengg.com/?p=1057 to https://atsengg.com/about-us/
+14:17:14	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/?p=6908 (from https://atsengg.com/downloads/)
+14:17:15	Warning: 	Moved Permanently for https://atsengg.com/?p=2917
+14:17:15	Warning: 	File has moved from https://atsengg.com/?p=2917 to https://atsengg.com/faqs/
+14:17:18	Warning: 	Moved Permanently for https://atsengg.com/?p=2531
+14:17:18	Warning: 	File has moved from https://atsengg.com/?p=2531 to https://atsengg.com/complaints/
+14:17:25	Warning: 	Moved Permanently for https://atsengg.com/?p=73
+14:17:25	Warning: 	File has moved from https://atsengg.com/?p=73 to https://atsengg.com/contact-us/
+14:17:26	Warning: 	Moved Permanently for https://atsengg.com/?p=7457
+14:17:26	Warning: 	File has moved from https://atsengg.com/?p=7457 to https://atsengg.com/quote/
+14:17:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4436
+14:17:26	Warning: 	File has moved from https://atsengg.com/?p=4436 to https://atsengg.com/projects/
+14:18:36	Warning: 	Moved Permanently for https://atsengg.com/?p=4604
+14:18:36	Warning: 	File has moved from https://atsengg.com/?p=4604 to https://atsengg.com/terms-and-condition/
+14:18:36	Warning: 	Moved Permanently for https://atsengg.com/?p=4667
+14:18:36	Warning: 	File has moved from https://atsengg.com/?p=4667 to https://atsengg.com/privacy-policy/
+14:18:36	Warning: 	Moved Permanently for https://atsengg.com/?p=4679
+14:18:36	Warning: 	File has moved from https://atsengg.com/?p=4679 to https://atsengg.com/testimonials/
+14:18:36	Warning: 	Moved Permanently for https://atsengg.com/?p=5473
+14:18:36	Warning: 	File has moved from https://atsengg.com/?p=5473 to https://atsengg.com/site-map/
+14:18:37	Warning: 	Moved Permanently for https://atsengg.com/product-category/fabrication/
+14:18:37	Warning: 	File has moved from https://atsengg.com/product-category/fabrication/ to https://atsengg.com/fabrication/
+14:18:37	Warning: 	Moved Permanently for https://atsengg.com/product-category/industrial-fan/
+14:18:37	Warning: 	File has moved from https://atsengg.com/product-category/industrial-fan/ to https://atsengg.com/portfolio/industrial-fan1/
+14:18:37	Warning: 	Moved Permanently for https://atsengg.com/product-category/solar-solutions/
+14:18:37	Warning: 	File has moved from https://atsengg.com/product-category/solar-solutions/ to https://atsengg.com/solar-solutions/
+14:18:37	Error: 	"Not Found" (404) at link https://atsengg.com/submit-ticket/ (from https://atsengg.com/site-map/)
+14:18:37	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/feedback/ (from https://atsengg.com/site-map/)
+14:18:37	Error: 	"Not Found" (404) at link https://atsengg.com/my-account/ (from https://atsengg.com/site-map/)
+14:18:39	Warning: 	Moved Permanently for https://atsengg.com/?p=2837
+14:18:39	Warning: 	File has moved from https://atsengg.com/?p=2837 to https://atsengg.com/industrial-fans/
+14:18:39	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/uploads/2024/05/f1-2.png (from https://atsengg.com/industrial-fans/)
+14:18:52	Warning: 	Moved Permanently for https://atsengg.com/?p=3711
+14:18:52	Warning: 	File has moved from https://atsengg.com/?p=3711 to https://atsengg.com/apply-for-jobs/
+14:18:57	Warning: 	Moved Permanently for https://atsengg.com/?p=8226
+14:18:57	Warning: 	File has moved from https://atsengg.com/?p=8226 to https://atsengg.com/refund-exchange-policy/
+14:18:57	Warning: 	Moved Permanently for https://atsengg.com/?p=2439
+14:18:57	Warning: 	File has moved from https://atsengg.com/?p=2439 to https://atsengg.com/net-metering/
+14:18:58	Warning: 	Moved Permanently for https://atsengg.com/?p=5459
+14:18:58	Warning: 	File has moved from https://atsengg.com/?p=5459 to https://atsengg.com/group-of-companies/
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/nav.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/select_arrow.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/facebook.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/twitter.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/map.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/location-icon.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/images/arrow.png (from https://atsengg.com/wp-content/plugins/wp-google-map-plugin/assets/css/frontend.css?ver=6.2.6)
+14:18:58	Error: 	"Connect Error" (-4) after 2 retries at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_120x120.png (from https://atsengg.com/)
+14:18:58	Error: 	"Connect Error" (-4) after 2 retries at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_76x76.png (from https://atsengg.com/)
+14:18:58	Error: 	"Connect Error" (-4) after 2 retries at link localhost/det/wordpress/wp-content/themes/porto/porto/images/logo/apple-touch-icon_152x152.png (from https://atsengg.com/)
+14:18:58	Warning: 	Retry after error -4 (Connect Error) at link localhost/det/wordpress/wp-content/uploads/2020/12/Untitled-7.jpg (from https://atsengg.com/solar-solutions/)
+14:18:58	Warning: 	Moved Permanently for https://atsengg.com/?p=6908
+14:18:58	Warning: 	File has moved from https://atsengg.com/?p=6908 to https://atsengg.com/downloads/
+14:19:03	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-content/plugins/ultimate-dashboard/modules/login-customizer/assets/js/login-page.js?ver=3.8 (from https://atsengg.com/ats-login/?action=lostpassword&redirect_to=https%3A%2F%2Fatsengg.com%2Fmy-tickets%2F)
+14:19:03	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/wpforms-lite/assets/pro/images/times-solid-white.svg (from https://atsengg.com/wp-content/plugins/wpforms-lite/assets/css/frontend/classic/wpforms-full.min.css?ver=1.8.8.3)
+14:19:03	Warning: 	Moved Permanently for https://atsengg.com/?p=4442
+14:19:03	Warning: 	File has moved from https://atsengg.com/?p=4442 to https://atsengg.com/portfolio/solar-panel/
+14:19:23	Warning: 	Moved Permanently for https://atsengg.com/?p=4444
+14:19:23	Warning: 	File has moved from https://atsengg.com/?p=4444 to https://atsengg.com/portfolio/sp1/
+14:19:27	Warning: 	Moved Permanently for https://atsengg.com/?p=4446
+14:19:27	Warning: 	File has moved from https://atsengg.com/?p=4446 to https://atsengg.com/portfolio/sp2/
+14:19:28	Warning: 	Moved Permanently for https://atsengg.com/?p=4448
+14:19:28	Warning: 	File has moved from https://atsengg.com/?p=4448 to https://atsengg.com/portfolio/sp3/
+14:19:38	Warning: 	Moved Permanently for https://atsengg.com/?p=4450
+14:19:38	Warning: 	File has moved from https://atsengg.com/?p=4450 to https://atsengg.com/portfolio/sp4/
+14:19:43	Warning: 	Moved Permanently for https://atsengg.com/?p=4456
+14:19:43	Warning: 	File has moved from https://atsengg.com/?p=4456 to https://atsengg.com/portfolio/sp5/
+14:19:43	Warning: 	Moved Permanently for https://atsengg.com/?p=4458
+14:19:43	Warning: 	File has moved from https://atsengg.com/?p=4458 to https://atsengg.com/portfolio/sp6/
+14:19:43	Warning: 	Moved Permanently for https://atsengg.com/?p=4475
+14:19:43	Warning: 	File has moved from https://atsengg.com/?p=4475 to https://atsengg.com/portfolio/sp7/
+14:19:43	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-json/wp/v2/portfolio/4477 (from https://atsengg.com/portfolio/fc1/)
+14:19:43	Warning: 	Moved Permanently for https://atsengg.com/?p=4477
+14:19:43	Warning: 	File has moved from https://atsengg.com/?p=4477 to https://atsengg.com/portfolio/fc1/
+14:19:53	Warning: 	Moved Permanently for https://atsengg.com/?p=4479
+14:19:53	Warning: 	File has moved from https://atsengg.com/?p=4479 to https://atsengg.com/portfolio/fc2/
+14:19:58	Warning: 	Moved Permanently for https://atsengg.com/?p=4481
+14:19:58	Warning: 	File has moved from https://atsengg.com/?p=4481 to https://atsengg.com/portfolio/fc3/
+14:19:58	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatsengg.com%2Fportfolio%2Ffc3%2F (from https://atsengg.com/portfolio/fc3/)
+14:20:07	Warning: 	Moved Permanently for https://atsengg.com/?p=4483
+14:20:07	Warning: 	File has moved from https://atsengg.com/?p=4483 to https://atsengg.com/portfolio/fc4/
+14:20:19	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.eot?wwysq2 (from https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.33)
+14:20:19	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.ttf?wwysq2 (from https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.33)
+14:20:19	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.woff?wwysq2 (from https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.33)
+14:20:19	Error: 	"Not Found" (404) at link https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/plugins/premium-addons-for-elementor/assets/editor/fonts/pa-elements.svg?wwysq2 (from https://atsengg.com/wp-content/plugins/premium-addons-for-elementor/assets/frontend/min-css/premium-addons.min.css?ver=4.10.33)
+14:20:19	Warning: 	Moved Permanently for https://atsengg.com/?p=3713
+14:20:19	Warning: 	File has moved from https://atsengg.com/?p=3713 to https://atsengg.com/jobs/sqa/
+14:20:20	Error: 	"Connect Error" (-4) after 2 retries at link localhost/det/wordpress/wp-content/uploads/2020/12/Untitled-7.jpg (from https://atsengg.com/solar-solutions/)
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4495
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4495 to https://atsengg.com/portfolio/fc9/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4503
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4503 to https://atsengg.com/portfolio/solar-solution-battery/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4505
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4505 to https://atsengg.com/portfolio/net-metering/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4507
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4507 to https://atsengg.com/portfolio/net-metering1/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4489
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4489 to https://atsengg.com/portfolio/fc6/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4491
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4491 to https://atsengg.com/portfolio/fc7/
+14:20:26	Warning: 	Moved Permanently for https://atsengg.com/?p=4487
+14:20:26	Warning: 	File has moved from https://atsengg.com/?p=4487 to https://atsengg.com/portfolio/fc5/
+14:20:27	Warning: 	Moved Permanently for https://atsengg.com/?p=4485
+14:20:27	Warning: 	File has moved from https://atsengg.com/?p=4485 to https://atsengg.com/portfolio/fc4-2/
+14:20:27	Warning: 	Moved Permanently for https://atsengg.com/?p=4497
+14:20:27	Warning: 	File has moved from https://atsengg.com/?p=4497 to https://atsengg.com/portfolio/fc10/
+14:20:27	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatsengg.com%2Fportfolio%2Ffc10%2F (from https://atsengg.com/portfolio/fc10/)
+14:20:28	Warning: 	Moved Permanently for https://atsengg.com/?p=4493
+14:20:28	Warning: 	File has moved from https://atsengg.com/?p=4493 to https://atsengg.com/portfolio/fc8/
+14:20:28	Warning: 	Moved Permanently for https://atsengg.com/?p=4499
+14:20:28	Warning: 	File has moved from https://atsengg.com/?p=4499 to https://atsengg.com/portfolio/industrial-fan1/
+14:20:28	Warning: 	Moved Permanently for https://atsengg.com/?p=4501
+14:20:28	Warning: 	File has moved from https://atsengg.com/?p=4501 to https://atsengg.com/portfolio/industrial-fan2/
+14:20:28	Warning: 	Moved Permanently for https://atsengg.com/?p=2397
+14:20:28	Warning: 	File has moved from https://atsengg.com/?p=2397 to https://atsengg.com/fabrication/
+14:20:28	Warning: 	Retry after error -4 (No data (connection closed)) at link https://atsengg.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fatsengg.com%2Ffabrication%2F&format=xml (from https://atsengg.com/fabrication/)
+14:20:28	Warning: 	Moved Permanently for https://atsengg.com/?p=4675
+14:20:28	Warning: 	File has moved from https://atsengg.com/?p=4675 to https://atsengg.com/feedback/
+
+HTTrack Website Copier/3.49-2 mirror complete in 9 minutes 56 seconds : 981 links scanned, 877 files written (66277652 bytes overall) [45000408 bytes received at 75504 bytes/sec], 31765462 bytes transferred using HTTP compression in 415 files, ratio 19%, 7.4 requests per connection
+(24 errors, 129 warnings, 0 messages)
